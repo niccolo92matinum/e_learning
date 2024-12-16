@@ -185,171 +185,10 @@ const QuestionDraggable = (props) => {
 
  
 
-  const handleReorder = (clickedId) => {
-
-
-   
-  
-    // Capture the initial positions of items
-    const listItems = Array.from(listRef.current.children);
-  
-    const initialPositions = listItems.map((item) =>
-      item.getBoundingClientRect()
-    );
-  
-//controllo se l'elemnto è stato selezionato altrimenti faccio il rollback
-    const isElementChecked = userAnswers.find(el => el.id === clickedId).touched 
-   const checkIfTestStart = userAnswers.some((obj) => obj.touched === true);
-   console.log({isElementChecked})
-let reorderedItems = [];
-if(checkIfTestStart === false){
-  console.log(1)
-  reorderedItems = [
-    ...userAnswers.filter((item) => item.id === clickedId),
-    ...userAnswers.filter((item) => item.id !== clickedId)
-  ];
-}else if(isElementChecked === false && checkIfTestStart === true){
-  console.log(2)
-  reorderedItems = [
-    ...userAnswers.filter((item) => item.touched),
-    ...userAnswers.filter((item) => item.id === clickedId),
-    ...userAnswers.filter((item) => (item.id !== clickedId && item.touched === false))
-  ];
-}else if(isElementChecked === true && checkIfTestStart === true){
- 
-
-  reorderedItems = [
-    ...userAnswers.filter((item) => (item.id !== clickedId &&  item.touched === true) ),
-    ...userAnswers.filter((item) => item.id === clickedId ),
-    ...userAnswers.filter((item) => item.touched === false )
-  ];
-}
-
-
-    const reorderedItemsWithNewPosition = reorderedItems.map((el,index) =>{
-      el = {...el,...{position:index}}
-      if(el.id === clickedId &&  el.touched === false ){
-        //el.touched = true
-       el = {...el,...{touched:true}}
-      }else if(el.id === clickedId &&  el.touched === true ){
-        el = {...el,...{touched:false}}
-      }
-      return el;
-    } )
-
-   
-  
-    const initialData = listItems.map((item) => ( {id:item.getAttribute("data-id"),position:item.getAttribute("data-key"),top:item.getBoundingClientRect().top}))
-    //const newData = listItems2.map((item) => ( {id:item.getAttribute("data-id"),position:item.getAttribute("data-key"),top:item.getBoundingClientRect().top}))
-  
-    
-    console.log({old:initialData ,elem:reorderedItemsWithNewPosition})
-
-    listItems.forEach((item, index) => {
-      // After state update, calculate new positions
-      //const newElposition = reorderedItemsWithNewPosition.find(el => el.id === clickedId).position
-
-      //const newpposition = initialData.find(el => Number(el.position) === newElposition).top
-     const prova = reorderedItemsWithNewPosition.find(el => el.id === Number(item.getAttribute("data-id"))).position
-     const newAlign = initialData.find(el => Number(el.position) === prova).top
-     const oldIlign = initialData[index].top
-     
-      const tot = oldIlign - newAlign
-  
-   console.log({tot:oldIlign - newAlign,oldIlign,newAlign})
-
-   if(index === 1){
-
-    gsap.to(
-      item,
-      {
-        y: 100,
-        duration: 1,
-        //onComplete: () => setUserAnswers(reorderedItemsWithNewPosition),
-      })
-
-   }
-
-  });
-  };
-
-
-
-
-
-/*
-
-const listItems2 = Array.from(listRef.current.children);
-    const newPositions = listItems2.map((item) => ( {id:item.getAttribute("data-id"),position:item.getAttribute("data-key"),top:item.getBoundingClientRect().top}))
-    const oldPositions = positionsRef.current.map((item) => ( {id:item.getAttribute("data-id"),position:item.getAttribute("data-key"),top:item.getBoundingClientRect().top}))
-   listRef.current = reorderedItemsWithNewPosition
-  //gsap
-    listItems.forEach((item, index) => {
-      // After state update, calculate new positions
-   const dy =  initialPositions[index].top - newPositions[index].top;
-   
-
-   gsap.to(
-     item,
-     {
-       y: dy,
-       duration: 1,
-       ease: "power2.out",
-       //onComplete: () => setUserAnswers(reorderedItemsWithNewPosition),
-     })
- });
-   
-////////
-  useGSAP(
-    () => {
-
-      gsap.to(
-        item,
-        {
-          y: dy,
-          duration: 1,
-          ease: "power2.out"
-        })
-    },
-    [userAnswers]
-);
-
-  useEffect(() => {
-    if (positionsRef.current.length === 0) return;
-
- 
-    const listItems2 = Array.from(listRef.current.children);
-    const newPositions = listItems2.map((item) => ( {id:item.getAttribute("data-id"),position:item.getAttribute("data-key"),top:item.getBoundingClientRect().top}))
-    const oldPositions = positionsRef.current
-    //console.log(listItems2,'key key')
   
 
-    
-    // Animate with GSAP
-    listItems2.forEach((item, index) => {
-         // After state update, calculate new positions
-         console.log({old:oldPositions,new:newPositions},listItems2)
-    //console.log({new:newPositions.find(el => el.id === item.id).position,item})
-   console.log(oldPositions.find(el => el.id === item.getAttribute("data-id")).top, newPositions.find(el => el.id === item.getAttribute("data-id")).top)
-      const dy = newPositions.find(el => el.id === item.getAttribute("data-id")).top - oldPositions.find(el => el.id === item.getAttribute("data-id")).top
-      console.log(item)
-   console.log(dy)
-      gsap.to(
-        item,
-        {
-          y: dy,
-          duration: 1,
-          ease: "power2.out",
-          onComplete: () => gsap.set(boxRef.current, { clearProps: "all" }),
-        })
-    });
-
-    // Clear positions reference
-    positionsRef.current = [];
-  }, [userAnswers]);
-*/
   return (
-    <div className={"Question"}>
+    <div className="Question">
 
       <HeaderQuestion
         currentQuestionIndex={currentQuestionIndex}
@@ -357,7 +196,12 @@ const listItems2 = Array.from(listRef.current.children);
         subtitle={subtitle}
         questionsLenght={questionsLenght}
       ></HeaderQuestion>
-        <div ref={listRef}>
+        <div style={{ position: 'relative',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      gap: '10px',
+                      padding: '10px'}}
+                       ref={listRef}>
               {userAnswers.map((answer, index) => (
                 <SortableItem
                 
@@ -382,7 +226,7 @@ const listItems2 = Array.from(listRef.current.children);
                   index={index}
                   text={answer.text}
                   position={answer.position}
-                  handleReorder={handleReorder}
+                  handleReorder={11}
                 ></SortableItem>
               ))}
         </div>
