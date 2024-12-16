@@ -249,13 +249,21 @@ if(checkIfTestStart === false){
         duration: 0.5,
         ease: "power1.out",
        onComplete: () => {
-        gsap.set(item, { clearProps: "all" });
         setUserAnswers(reorderedItemsWithNewPosition) 
        }
       })
   });
   
   };
+
+
+  useEffect(()=>{
+    const listItems = Array.from(listRef.current.children);
+  
+    listItems.forEach((item, index) => {
+      gsap.set(item, { clearProps: "all" });
+    })
+  },[userAnswers])
 
 console.log('render')
   return (
