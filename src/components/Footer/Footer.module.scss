@@ -1,0 +1,21 @@
+@import '../../variables';
+
+.Footer {
+  background-color: $footerBgColor;
+  color: $footerColor;
+  bottom: 0;
+  display: flex;
+  height: $footerHeight;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  z-index: $zindexHeader;
+
+  .controlsContainer {
+    bottom: 0;
+    height: calc(100% - 10px);
+    position: absolute;
+    overflow: hidden;
+  }
+}
+

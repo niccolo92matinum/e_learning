@@ -1,0 +1,10 @@
+{
+  "tracking_enabled": true,
+  "alertConnectionAPI": false,
+  "recover_state_on_reopen": false,
+  "tracking_type": "suspend_data",
+  "tracking_passed_failed": false,
+  "lms_polling_minutes": 5,
+  "mastery_score": 0,
+  "trackUntilCompleted": false
+}

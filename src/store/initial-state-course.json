@@ -1,0 +1,51 @@
+{
+  "controlsVideoJs": false,
+  "restricted": false,
+  "disableDevtool": false,
+  "landingPageVisible": false,
+  "isDebug": true,
+  "editMode": false,
+  "currentPage": {
+    "idModule": null,
+    "idLesson": null,
+    "idPage": null
+  },
+  "autoNext": false,
+  "lang": {
+    "currentLang": "it"
+  },
+  "index": {
+    "visible": true,
+    "showAllLessons": true
+  },
+  "pageNav": {
+    "visible": true
+  },
+  "fullscreen": {
+    "visible": false
+  },
+  "help": {
+    "visible": false
+  },
+  "languages": [
+    {
+      "small_title": "en",
+      "long_title": "English",
+      "img": "./assets/lang/england.svg"
+    },
+    {
+      "small_title": "it",
+      "long_title": "Italiano",
+      "img": "./assets/lang/italy.svg"
+    }
+  ],
+  "vttLanguages": [
+    {
+      "small_title": "it",
+      "long_title": "Italiano",
+      "img": "./assets/lang/italy.svg"
+    }
+  ],
+  "suffixJsonToRead": "_testfinale",
+  "layoutType": "LAYOUT_BOX"
+}

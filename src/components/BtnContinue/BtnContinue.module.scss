@@ -1,0 +1,14 @@
+@import "../../variables";
+.btnContinue{
+    position: absolute;
+    top: 38%;
+    right: 0;
+    background-color: #FFF;
+    border: 2px solid $colorMain;
+    color: $colorMain;
+    padding: 16px;
+    z-index: $zindexBtnContinue;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px 0px #333;
+    transform: translate(100%, 0%);
+  }  

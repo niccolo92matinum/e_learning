@@ -1,0 +1,30 @@
+@import "../../../variables.scss";
+.Cruciverba{
+  height: 100%;
+
+  table{
+    border-spacing: 3px;
+    border-collapse: separate;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .definitionsList{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    overflow: auto;
+    max-width: 1024px;
+    margin: 10px auto;
+    > div{
+      width: 280px;
+      flex: 0 0 280px;
+    }
+  }
+  .detailView{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "cancel": "Annulla",
+  "chooseAnOption": "Scegli un'opzione",
+  "confirm": "Conferma",
+  "confirmBeginText": "Vuoi riprendere dal punto di interruzione precedente?",
+  "course": "Corso",
+  "courseTitle": "D.Lgs. 231/2001 e Responsabilità Amministrativa degli enti",
+  "finalProfileResult_ko": "Il test non è superato!",
+  "finalProfileResult_ok": "Il test è superato!",
+  "final_profile": "Profilo finale",
+  "greetings": "Ciao",
+  "innerDoughnut": "Completato",
+  "codiceLo": "LOcode",
+  "lessons": {
+    "1": {
+      "childIds": [
+        1,2
+      ],
+      "id": 1,
+      "title": ""
+    }
+  },
+  "maxScore": "Punteggio massimo",
+  "modules": {
+    "1": {
+      "childIds": [
+        1
+      ],
+      "id": 1,
+      "title": "Codice Etico"
+    }
+  },
+  "next_question": "Avanti",
+  "no": "NO",
+  "of": "di",
+  "pages": {
+    "1": {
+      "audioTranscription": "<p>Crediamo fermamente che il successo di un’azienda derivi dalla sua capacità di condurre gli affari in maniera etica.</p><p>Per questo abbiamo adottato il Codice Etico,</p><p>uno strumento destinato ad Amministratori, Sindaci, dirigenti e dipendenti del Gruppo Prometeon ma non solo!</p><p>Il Codice, infatti, si rivolge a tutti coloro che operano per conto o in favore del Gruppo Prometeon, o che intrattengono relazioni di affari con il Gruppo.</p><p>Tutte queste persone, nell’ambito delle proprie funzioni e responsabilità, sono tenute al rispetto dei principi e delle prescrizioni</p><p>contenute nel Codice Etico.</p><p>Ma quali sono questi principi e prescrizioni?</p><p>Scopriamoli insieme!</p>",
+      "id": 1,
+      "title": "Introduzione",
+      "childIds": [
+        1
+      ]
+    },
+    "2": {
+      "audioTranscription": "<p>Prova</p>",
+      "id": 2,
+      "title": "Prova",
+      "childIds": [
+        1
+      ],
+      "videoSrc": "01_04"
+    }
+  },
+  "passScore": "Percentuale superamento test",
+  "pdfDocument": "",
+  "prev_question": "Indietro",
+  "question_count": "Domanda {current} di {total}",
+  "question": "Domanda",
+  "questions": "Domande",
+  "retry": "Riprova",
+  "given_answer": "Risposta data",
+  "review": "Ripasso",
+  "result": "Esito",
+  "select": "Seleziona",
+  "skip": "Salta",
+  "start": "Inizia",
+  "subtitles": "Sottotitoli",
+  "timings": {
+    "1": {
+      "id": 1,
+      "position": "end",
+      "component": {
+        "id": "",
+        "type": "multiple_step_test",
+        "config": {
+          "welcomeScreen": true,
+          "summaryDetail": {
+            "answered": true,
+            "correct": true,
+            "review": true
+          },
+          "track": true
+        },
+        "timer": 60,
+        "limit": -1,
+        "shuffleAnswers": false,
+        "random": true,
+        "confirmOnAnswer": true,
+        "isHideFeedback": false,
+        "attempt": 3,
+        "groups": {
+          "G1": 1,
+          "G2": 1
+        },
+        "elements": [
+          {
+            "id": "E1",
+            "groupId": "G1",
+            "feedback": {
+              "ok": "La risposta che hai dato è quella corretta",
+              "ko": "Purtroppo non mi conosci"
+            },
+            "review": "review 1",
+            "audioQuestion": "01_01",
+            "type": "exercise_single",
+            "title": "Quale tra questi prodotti è bio based",
+            "subtitle": "Vediamo se indovini",
+            "score": 1,
+            "answers": [
+              {
+                "text": "Sacchetto di plastica"
+              },
+              {
+                "text": "Camicia di cotone",
+                "correct": true
+              },
+              {
+                "text": "Nessuno"
+              }
+            ]
+          },
+          {
+            "id": "E2",
+            "groupId": "G2",
+            "feedback": {
+              "ok": "La risposta che hai dato è quella corretta",
+              "ko": "Purtroppo non mi conosci"
+            },
+            "audioQuestion": "01_01",
+            "type": "exercise_multiple",
+            "title": "Quali tra questi rappresenta un tipo di biomassa",
+            "score": 1,
+            "answers": [
+              {
+                "text": "Gusci d'uova",
+                "correct": true
+              },
+              {
+                "text": "Alghe",
+                "correct": true
+              },
+              {
+                "text": "Legno",
+                "correct": true
+              },
+              {
+                "text": "Nessuno"
+              },
+              {
+                "text": "Grano",
+                "correct": true
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "index": "Indice",
+  "download": "Download",
+  "language": "Lingua",
+  "transcription": "Trascrizione",
+  "fullscreen": "Fullscreen",
+  "help": "Aiuto",
+  "repeat": "Ripeti",
+  "play": "Play",
+  "pausa": "Pausa",
+  "prev": "Indietro",
+  "next": "Avanti",
+  "mute": "Disabilita audio",
+  "unmute": "Abilita audio",
+  "home": "Home",
+  "tooltip_next": "Clicca qui per continuare",
+  "totalScore": "Hai totalizzato un punteggio pari al <strong>[[]]%</strong>",
+  "reviewDescription": "Ti suggeriamo di ripassare i contenuti delle domande con esito negativo, <strong>cliccando sulle icone</strong> corrispondenti.",
+  "showSolutions": "MOSTRA SOLUZIONI",
+  "welcomeTest": "E ora mettiti alla prova!",
+  "yes": "SI"
+}

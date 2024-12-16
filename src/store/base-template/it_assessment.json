@@ -1,0 +1,108 @@
+{
+  "cancel": "Annulla",
+  "chooseAnOption": "Scegli un'opzione",
+  "confirm": "Conferma",
+  "confirmBeginText": "Vuoi riprendere dal punto di interruzione precedente?",
+  "course": "Corso",
+  "courseTitle": "D.Lgs. 231/2001 e Responsabilità Amministrativa degli enti",
+  "finalProfileResult_ko": "Il test non è superato!",
+  "finalProfileResult_ok": "Il test è completato!",
+  "final_profile": "Profilo finale",
+  "greetings": "Ciao",
+  "innerDoughnut": "Completato",
+  "codiceLo": "LOcode",
+  "lessons": {
+    "1": {
+      "childIds": [
+        1
+      ],
+      "id": 1,
+      "title": ""
+    }
+  },
+  "maxScore": "Punteggio massimo",
+  "modules": {
+    "1": {
+      "childIds": [
+        1
+      ],
+      "id": 1,
+      "title": ""
+    }
+  },
+  "next_question": "Avanti",
+  "no": "NO",
+  "of": "di",
+  "pages": {
+    "1": {
+      "audioTranscription": "",
+      "title": "",
+      "childIds": [
+        1
+      ],
+      "id": 1
+    }
+  },
+  "passScore": "Percentuale superamento test",
+  "pdfDocument": "",
+  "prev_question": "Indietro",
+  "question_count": "Domanda {current} di {total}",
+  "question": "Domanda",
+  "questions": "Domande",
+  "retry": "Riprova",
+  "given_answer": "Risposta data",
+  "review": "Ripasso",
+  "result": "Esito",
+  "select": "Seleziona",
+  "skip": "Salta",
+  "start": "Inizia",
+  "subtitles": "Sottotitoli",
+  "timings": {
+    "1": {
+      "id": 1,
+      "position": "end",
+      "component": {
+        "id": "",
+        "type": "multiple_step_test",
+        "config": {
+          "welcomeScreen": true,
+          "summaryDetail": {
+            "answered": true,
+            "correct": true,
+            "review": true
+          },
+          "track": true
+        },
+        "limit": -1,
+        "random": true,
+        "timer": 1800,
+        "shuffleAnswer": true,
+        "confirmOnAnswer": true,
+        "isHideFeedback": false,
+        "attempt": 3,
+        "groups": {},
+        "elements": []
+      }
+    }
+  },
+  "index": "Indice",
+  "download": "Download",
+  "language": "Lingua",
+  "transcription": "Trascrizione",
+  "fullscreen": "Fullscreen",
+  "help": "Aiuto",
+  "repeat": "Ripeti",
+  "play": "Play",
+  "pausa": "Pausa",
+  "prev": "Indietro",
+  "next": "Avanti",
+  "mute": "Disabilita audio",
+  "unmute": "Abilita audio",
+  "home": "Home",
+  "tooltip_next": "Clicca qui per continuare",
+  "totalScore": "Hai totalizzato un punteggio pari al <strong>[[]]%</strong>",
+  "reviewDescription": "Ti suggeriamo di ripassare i contenuti delle domande con esito negativo, <strong>cliccando sulle icone</strong> corrispondenti.",
+  "showSolutions": "MOSTRA SOLUZIONI",
+  "welcomeTest": "E ora mettiti alla prova!",
+  "yes": "SI"
+}

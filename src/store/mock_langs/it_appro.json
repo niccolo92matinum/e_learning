@@ -1,0 +1,164 @@
+{
+  "cancel": "Annulla",
+  "chooseAnOption": "Scegli un'opzione",
+  "confirm": "Conferma",
+  "confirmBeginText": "Vuoi riprendere dal punto di interruzione precedente?",
+  "course": "Corso",
+  "courseTitle": "D.Lgs. 231/2001 e Responsabilità Amministrativa degli enti",
+  "finalProfileResult_ko": "Il test non è superato!",
+  "finalProfileResult_ok": "Il test è superato!",
+  "final_profile": "Profilo finale",
+  "greetings": "Ciao",
+  "innerDoughnut": "Completato",
+  "lessons": {
+    "1": {
+      "childIds": [
+        1,2,3,4
+      ],
+      "id": 1,
+      "title": ""
+    }
+  },
+  "maxScore": "Punteggio massimo",
+  "modules": {
+    "1": {
+      "childIds": [
+        1
+      ],
+      "id": 1,
+      "title": "Codice Etico"
+    }
+  },
+  "next_question": "Avanti",
+  "no": "NO",
+  "of": "di",
+  "pages": {
+    "1": {
+      "audioTranscription": "<p>Crediamo fermamente che il successo di un’azienda derivi dalla sua capacità di condurre gli affari in maniera etica.</p><p>Per questo abbiamo adottato il Codice Etico,</p><p>uno strumento destinato ad Amministratori, Sindaci, dirigenti e dipendenti del Gruppo Prometeon ma non solo!</p><p>Il Codice, infatti, si rivolge a tutti coloro che operano per conto o in favore del Gruppo Prometeon, o che intrattengono relazioni di affari con il Gruppo.</p><p>Tutte queste persone, nell’ambito delle proprie funzioni e responsabilità, sono tenute al rispetto dei principi e delle prescrizioni</p><p>contenute nel Codice Etico.</p><p>Ma quali sono questi principi e prescrizioni?</p><p>Scopriamoli insieme!</p>",
+      "id": 1,
+      "title": "Introduzione",
+      "videoSrc": "01_01"
+    },
+    "2": {
+      "audioTranscription": "<p>Crediamo fermamente che il successo di un’azienda derivi dalla sua capacità di condurre gli affari in maniera etica.</p><p>Per questo abbiamo adottato il Codice Etico,</p><p>uno strumento destinato ad Amministratori, Sindaci, dirigenti e dipendenti del Gruppo Prometeon ma non solo!</p><p>Il Codice, infatti, si rivolge a tutti coloro che operano per conto o in favore del Gruppo Prometeon, o che intrattengono relazioni di affari con il Gruppo.</p><p>Tutte queste persone, nell’ambito delle proprie funzioni e responsabilità, sono tenute al rispetto dei principi e delle prescrizioni</p><p>contenute nel Codice Etico.</p><p>Ma quali sono questi principi e prescrizioni?</p><p>Scopriamoli insieme!</p>",
+      "id": 2,
+      "title": "Introduzione",
+      "videoSrc": "01_02"
+    },
+    "3": {
+      "audioTranscription": "<p>Crediamo fermamente che il successo di un’azienda derivi dalla sua capacità di condurre gli affari in maniera etica.</p><p>Per questo abbiamo adottato il Codice Etico,</p><p>uno strumento destinato ad Amministratori, Sindaci, dirigenti e dipendenti del Gruppo Prometeon ma non solo!</p><p>Il Codice, infatti, si rivolge a tutti coloro che operano per conto o in favore del Gruppo Prometeon, o che intrattengono relazioni di affari con il Gruppo.</p><p>Tutte queste persone, nell’ambito delle proprie funzioni e responsabilità, sono tenute al rispetto dei principi e delle prescrizioni</p><p>contenute nel Codice Etico.</p><p>Ma quali sono questi principi e prescrizioni?</p><p>Scopriamoli insieme!</p>",
+      "id": 3,
+      "title": "Introduzione",
+      "videoSrc": "01_03",
+      "childIds": [
+        1
+      ]
+    },
+    "4": {
+      "audioTranscription": "<p>Crediamo fermamente che il successo di un’azienda derivi dalla sua capacità di condurre gli affari in maniera etica.</p><p>Per questo abbiamo adottato il Codice Etico,</p><p>uno strumento destinato ad Amministratori, Sindaci, dirigenti e dipendenti del Gruppo Prometeon ma non solo!</p><p>Il Codice, infatti, si rivolge a tutti coloro che operano per conto o in favore del Gruppo Prometeon, o che intrattengono relazioni di affari con il Gruppo.</p><p>Tutte queste persone, nell’ambito delle proprie funzioni e responsabilità, sono tenute al rispetto dei principi e delle prescrizioni</p><p>contenute nel Codice Etico.</p><p>Ma quali sono questi principi e prescrizioni?</p><p>Scopriamoli insieme!</p>",
+      "id": 4,
+      "title": "Introduzione",
+      "videoSrc": "01_04"
+    }
+  },
+  "passScore": "Percentuale superamento test",
+  "pdfDocument": "docs/Regolamento.pdf",
+  "prev_question": "Indietro",
+  "question_count": "Domanda {current} di {total}",
+  "question": "Domanda",
+  "questions": "Domande",
+  "retry": "Riprova",
+  "given_answer": "Risposta data",
+  "review": "Ripasso",
+  "result": "Esito",
+  "select": "Seleziona",
+  "skip": "Salta",
+  "start": "Inizia",
+  "subtitles": "Sottotitoli",
+  "timings": {
+    "1": {
+      "id": 1,
+      "position": "end",
+      "component": {
+        "id": "",
+        "type": "custom",
+        "tagComponent": "approfondimenti",
+        "props": {
+          "positionType": "flex",
+          "detailed": [
+            {
+              "coords": {
+                "width": "23%",
+                "height": "38%",
+                "left": "13%",
+                "top": "4%"
+              },
+              "audio": "01_01",
+              "popupType": "nodeHtml",
+              "props": {
+                "title": "Parte Generale",
+                "nodeHtml": "<p>La Parte Generale comprende una descrizione del quadro normativo di riferimento, dell’attività svolta dalla Società e la definizione di una struttura necessaria per l’attuazione e diffusione del Modello.</p>"
+              }
+            },
+            {
+              "coords": {
+                "width": "23%",
+                "height": "38%",
+                "left": "39%",
+                "top": "4%"
+              },
+              "popupType": "link",
+              "props": {
+                "title": "Procedure operative",
+                "link": "sharepoint.com/sites/COMPLIANCE77"
+              }
+            },
+            {
+              "coords": {
+                "width": "23%",
+                "height": "38%",
+                "left": "64%",
+                "top": "4%"
+              },
+              "popupType": "pdf",
+              "props": {
+                "title": "Procedure operative",
+                "pdfLink": "./docs/Regolamento.pdf"
+
+              }
+            },
+            {
+              "coords": {
+                "width": "23%",
+                "height": "38%",
+                "left": "25%",
+                "top": "45%"
+              },
+              "popupType": "nodeHtml",
+              "props": {
+                "title": "Procedure operative",
+                "nodeHtml": "<p>Sono  parti integranti del Modello le procedure operative e le regole del sistema di gestione aziendale adottate dalle Società per la conduzione delle attività sensibili ed il controllo dei relativi processi. </p>"
+              }
+            },
+            {
+              "coords": {
+                "width": "23%",
+                "height": "38%",
+                "left": "51%",
+                "top": "45%"
+              },
+              "popupType": "link",
+              "props": {
+                "title": "Procedure operative",
+                "link": "sharepoint.com/sites/COMPLIANCE77"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "tooltip_next": "Clicca qui per continuare",
+  "totalScore": "Hai totalizzato un punteggio pari al <strong>[[]]%</strong>",
+  "yes": "SI"
+}

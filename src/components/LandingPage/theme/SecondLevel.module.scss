@@ -1,0 +1,21 @@
+.secondBlock{
+    width: 100px;
+    margin: 20px;
+    border: 2px solid red;
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 20px;
+    text-align: center;
+    padding-left: 19px;
+    font-weight: bold;
+    cursor: pointer;    
+    background-repeat: no-repeat;
+    height: 215px;
+    background-position-x: center;
+    > .moduleTitle{
+        background-color: #FFF;
+        padding: 20px 5px;
+        margin: -50px -13px;
+        border: 1px solid #333;
+    }
+}

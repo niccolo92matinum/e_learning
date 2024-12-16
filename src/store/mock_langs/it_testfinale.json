@@ -1,0 +1,367 @@
+{
+  "cancel": "Annulla",
+  "chooseAnOption": "Scegli un'opzione",
+  "confirm": "Conferma",
+  "confirmBeginText": "Vuoi riprendere dal punto di interruzione precedente?",
+  "course": "Corso",
+  "courseTitle": "D.Lgs. 231/2001 e Responsabilità Amministrativa degli enti",
+  "finalProfileResult_ko": "Il test non è superato!",
+  "finalProfileResult_ok": "Il test è superato!",
+  "final_profile": "Profilo finale",
+  "greetings": "Ciao",
+  "innerDoughnut": "Completato",
+  "lessons": {
+    "1": {
+      "childIds": [
+        1,2,3,4
+      ],
+      "id": 1,
+      "title": ""
+    }
+  },
+  "maxScore": "Punteggio massimo",
+  "modules": {
+    "1": {
+      "childIds": [
+        1
+      ],
+      "id": 1,
+      "title": "Codice Etico"
+    }
+  },
+  "next_question": "Avanti",
+  "no": "NO",
+  "of": "di",
+  "pages": {
+    "1": {
+      "audioTranscription": "<p>Crediamo fermamente che il successo di un’azienda derivi dalla sua capacità di condurre gli affari in maniera etica.</p><p>Per questo abbiamo adottato il Codice Etico,</p><p>uno strumento destinato ad Amministratori, Sindaci, dirigenti e dipendenti del Gruppo Prometeon ma non solo!</p><p>Il Codice, infatti, si rivolge a tutti coloro che operano per conto o in favore del Gruppo Prometeon, o che intrattengono relazioni di affari con il Gruppo.</p><p>Tutte queste persone, nell’ambito delle proprie funzioni e responsabilità, sono tenute al rispetto dei principi e delle prescrizioni</p><p>contenute nel Codice Etico.</p><p>Ma quali sono questi principi e prescrizioni?</p><p>Scopriamoli insieme!</p>",
+      "id": 1,
+      "title": "Introduzione",
+      "videoSrc": "01_01"
+    },
+    "2": {
+      "audioTranscription": "<p>Crediamo fermamente che il successo di un’azienda derivi dalla sua capacità di condurre gli affari in maniera etica.</p><p>Per questo abbiamo adottato il Codice Etico,</p><p>uno strumento destinato ad Amministratori, Sindaci, dirigenti e dipendenti del Gruppo Prometeon ma non solo!</p><p>Il Codice, infatti, si rivolge a tutti coloro che operano per conto o in favore del Gruppo Prometeon, o che intrattengono relazioni di affari con il Gruppo.</p><p>Tutte queste persone, nell’ambito delle proprie funzioni e responsabilità, sono tenute al rispetto dei principi e delle prescrizioni</p><p>contenute nel Codice Etico.</p><p>Ma quali sono questi principi e prescrizioni?</p><p>Scopriamoli insieme!</p>",
+      "id": 2,
+      "title": "Introduzione",
+      "videoSrc": "01_02"
+    },
+    "3": {
+      "audioTranscription": "<p>Crediamo fermamente che il successo di un’azienda derivi dalla sua capacità di condurre gli affari in maniera etica.</p><p>Per questo abbiamo adottato il Codice Etico,</p><p>uno strumento destinato ad Amministratori, Sindaci, dirigenti e dipendenti del Gruppo Prometeon ma non solo!</p><p>Il Codice, infatti, si rivolge a tutti coloro che operano per conto o in favore del Gruppo Prometeon, o che intrattengono relazioni di affari con il Gruppo.</p><p>Tutte queste persone, nell’ambito delle proprie funzioni e responsabilità, sono tenute al rispetto dei principi e delle prescrizioni</p><p>contenute nel Codice Etico.</p><p>Ma quali sono questi principi e prescrizioni?</p><p>Scopriamoli insieme!</p>",
+      "id": 3,
+      "title": "Introduzione",
+      "childIds": [
+        1
+      ]
+    },
+    "4": {
+      "audioTranscription": "<p>Crediamo fermamente che il successo di un’azienda derivi dalla sua capacità di condurre gli affari in maniera etica.</p><p>Per questo abbiamo adottato il Codice Etico,</p><p>uno strumento destinato ad Amministratori, Sindaci, dirigenti e dipendenti del Gruppo Prometeon ma non solo!</p><p>Il Codice, infatti, si rivolge a tutti coloro che operano per conto o in favore del Gruppo Prometeon, o che intrattengono relazioni di affari con il Gruppo.</p><p>Tutte queste persone, nell’ambito delle proprie funzioni e responsabilità, sono tenute al rispetto dei principi e delle prescrizioni</p><p>contenute nel Codice Etico.</p><p>Ma quali sono questi principi e prescrizioni?</p><p>Scopriamoli insieme!</p>",
+      "id": 4,
+      "title": "Introduzione",
+      "videoSrc": "01_03"
+    }
+  },
+  "passScore": "Percentuale superamento test",
+  "pdfDocument": "docs/Regolamento.pdf",
+  "prev_question": "Indietro",
+  "question_count": "Domanda {current} di {total}",
+  "question": "Domanda",
+  "questions": "Domande",
+  "retry": "Riprova",
+  "review": "Ripasso",
+  "given_answer": "Risposta data",
+  "result": "Esito",
+  "select": "Seleziona",
+  "skip": "Salta",
+  "start": "Inizia",
+  "subtitles": "Sottotitoli",
+  "timings": {
+    "1": {
+      "id": 1,
+      "position": "end",
+      "component": {
+        "id": "",
+        "type": "multiple_step_test",
+        "config": {
+          "welcomeScreen": true,
+          "summaryDetail": {
+            "answered": true,
+            "correct": true,
+            "review": false
+          },
+          "track": true
+        },
+        "limit": -1,
+        "random": false,
+        "timer": 0,
+        "confirmOnAnswer": true,
+        "isHideFeedback": false,
+        "elements": [
+          {
+            "feedback": {
+              "ok": "La risposta è corretta",
+              "ko": "La risposta non è corretta",
+              "retry": "Riprova!"
+            },
+            "type": "exercise_draggable",
+            "title": "<p>Testo formattato</p>",
+            "subtitle": "Clicca sulle opzioni per ordinarle",
+            "score": 1,
+            "attempt": 1,
+            "answers": [
+              {
+                "text": "<p>Energetica</p>",
+                "order": "3",
+                "id": 1,
+                "touched":false
+              },
+              {
+                "text": "<p>Sinergica</p>",
+                "order": "5",
+                "id": 2,
+                "touched":false
+              },
+              {
+                "text": "<p>Carismatica</p>",
+                "order": "2",
+                "id": 3,
+                "touched":false
+              },
+              {
+                "text": "<p>Poliedrica</p>",
+                "order": "4",
+                "id": 4,
+                "touched":false
+              },
+              {
+                "text": "<p>Attraente</p>",
+                "order": "1",
+                "id": 5,
+                "touched":false
+              },
+              {
+                "text": "<p>Virtuosa</p>",
+                "order": "6",
+                "id": 6,
+                "touched":false
+              }
+            ]
+          },
+          {
+            "feedback": {
+              "ok": "La risposta che hai dato è quella corretta",
+              "ko": "Purtroppo non mi conosci"
+            },
+            "audioQuestion": "01_01",
+            "type": "exercise_single",
+            "title": "Quale tra questi prodotti è bio based",
+            "subtitle": "Vediamo se indovini",
+            "score": 1,
+            "answers": [
+              {
+                "text": "Sacchetto di plastica"
+              },
+              {
+                "text": "Camicia di cotone",
+                "correct": true
+              },
+              {
+                "text": "Nessuno"
+              }
+            ]
+          },
+          {
+            "feedback": {
+              "ok": "La risposta che hai dato è quella corretta",
+              "ko": "Purtroppo non mi conosci"
+            },
+            "audioQuestion": "01_01",
+            "type": "exercise_multiple",
+            "title": "Quali tra questi rappresenta un tipo di biomassa",
+            "score": 1,
+            "answers": [
+              {
+                "text": "Gusci d'uova",
+                "correct": true
+              },
+              {
+                "text": "Alghe",
+                "correct": true
+              },
+              {
+                "text": "Legno",
+                "correct": true
+              },
+              {
+                "text": "Nessuno"
+              },
+              {
+                "text": "Grano",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "feedback": {
+              "ok": "La risposta è corretta",
+              "ko": "La risposta non è corretta",
+              "retry": "Riprova!"
+            },
+            "type": "exercise_card",
+            "title": "<p>Titolo formattato</p>",
+            "subtitle": "Sottotitolo",
+            "score": 1,
+            "attempt": 1,
+            "answers": [
+              {
+                "text": "<p>Testo frontale 1</p>",
+                "cover": "./assets/images/exercises/card-01.png",
+                "feedback": "<h5>Errato! <br /><i class=\"fa fa-times\" aria-hidden=\"true\"></i></p>"
+              },
+              {
+                "text": "<p>Testo frontale 2</p>",
+                "cover": "./assets/images/exercises/card-02.png",
+                "feedback": "<h5>Errato! <br /><i class=\"fa fa-times\" aria-hidden=\"true\"></i></h5>"
+              },
+              {
+                "text": "<p>Testo frontale 3</p>",
+                "cover": "./assets/images/exercises/card-03.png",
+                "feedback": "<h5>Esatto! <br /><i class=\"fa fa-check\" aria-hidden=\"true\"></i></h5>",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "feedback": {
+              "ok": "La risposta è corretta",
+              "ko": "La risposta non è corretta",
+              "retry": "Riprova!"
+            },
+            "type": "exercise_dropdown",
+            "title": "Titolo ",
+            "subtitle": "Sottotitolo",
+            "score": 1,
+            "attempt": 1,
+            "image": "./assets/images/exercises/00_02.jpg",
+            "mutuallyExclusive": false,
+            "answers": [
+              {
+                "text": "A.",
+                "correctOptionIndex": 0
+              },
+              {
+                "text": "B.",
+                "correctOptionIndex": 1
+              },
+              {
+                "text": "C.",
+                "correctOptionIndex": 2
+              }
+            ],
+            "options": [
+              {
+                "text": "option1"
+              },
+              {
+                "text": "option2"
+              },
+              {
+                "text": "option3"
+              }
+            ]
+          },
+          {
+            "feedback": {
+              "ok": "Correct!",
+              "ko": "La risposta non è corretta",
+              "retry": "Riprova!"
+            },
+            "type": "exercise_dropdown_inline",
+            "title": "It’s your turn: fill in the blank spaces with the correct options!",
+            "subtitle": "",
+            "score": 1,
+            "attempt": 1,
+            "isHideFeedback": true,
+            "sentence": "<p>Personal data is the fuel of [[0]]. To protect people&rsquo;s privacy, it is essential to apply norms that are [[1]] and [[2]] . GDPR has all of these features: it holds&nbsp;[[3]] responsible for the use they make of personal data and raises awareness among [[4]]. Organizations are pushed to conform to it to inspire trust in people.&nbsp;<br />Campari Group adopted&nbsp;[[5]] that guarantee conformity to GDPR and a DPO, an expert of&nbsp;[[6]] whose task is to support the Company in complying to the regulation and raise awareness through training and information activities.</p>",
+            "options": [
+              {
+                "0": "GDPR",
+                "1": "digital revolution",
+                "2": "traditional business"
+              },
+              {
+                "0": "Flexible",
+                "1": "rigid",
+                "2": "traditional"
+              },
+              {
+                "0": "State-specific",
+                "1": "oriented on business",
+                "2": "oriented on people’s rights"
+              },
+              {
+                "0": "Organizations",
+                "1": "citizens",
+                "2": "Nations"
+              },
+              {
+                "0": "Organizations",
+                "1": "citizens",
+                "2": "Nations"
+              },
+              {
+                "0": "A computer system",
+                "1": "a strict surveillance system",
+                "2": "a data protection model"
+              },
+              {
+                "0": "Data protection",
+                "1": "digital market",
+                "2": "information technology"
+              }
+            ],
+            "corrects": [
+              1,
+              0,
+              2,
+              0,
+              1,
+              2,
+              0
+            ]
+          },
+          {
+            "feedback": {
+              "ok": "La risposta è corretta",
+              "ko": "La risposta non è corretta",
+              "retry": "Riprova!"
+            },
+            "type": "exercise_yesorno",
+            "title": "<p>Titolo</p>",
+            "subtitle": "",
+            "score": 1,
+            "attempt": 1,
+            "questions": [
+              "Marrakesh è la capitale del Marocco",
+              "Alexander Fleming ha scoperto la penicillina",
+              "L'Alaska è il più grande stato d'America in miglia quadrate",
+              "Ci sono 5 tipi di gruppo sanguigno"
+            ],
+            "yes": "Vero",
+            "no": "Falso",
+            "corrects": [
+              1,
+              0,
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "tooltip_next": "Clicca qui per continuare",
+  "totalScore": "Hai totalizzato un punteggio pari al <strong>[[]]%</strong>",
+  "showSolutions": "MOSTRA SOLUZIONI",
+  "welcomeTest": "E ora mettiti alla prova!",
+  "yes": "SI"
+}

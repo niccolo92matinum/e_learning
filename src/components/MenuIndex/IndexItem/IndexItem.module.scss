@@ -1,0 +1,65 @@
+@import "../../../variables.scss";
+.pageTitle{
+    width: 100%;
+    // padding: 0px 0px 5px;
+    padding: 5px 10px 5px;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    font-weight: 600;
+    line-height: 1.5;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 0;
+    background-color: transparent;
+
+    .indexPage{
+      background-color: #2d2d2d;
+      color: #fff;
+      border-radius: 5px;
+      padding: 5px;
+      width: 20px;
+      flex: 0 0 20px;
+      // height: 15px;
+      text-align: center;
+      display: block;
+      margin-right: 10px;
+    }
+    .titlePage {
+      margin-right: auto;
+      text-align: left;
+    }
+    svg {
+      color: $colorMain;
+    }
+    &:hover{
+      background-color: $clientThirdColor;
+    }
+    &.active{
+      background-color: $clientSecondaryColor;
+      border-radius: 5px;
+      color: #FFF;
+      cursor: default;
+      .indexPage{
+        color: #fff;
+        background-color: transparent;
+      }
+    }
+
+
+    &.viewed{
+      color: #333;
+      .indexPage{
+        background-color: #f6f6f6;
+        color: #333;
+      }
+    }
+    &.freeNavigation{
+      cursor: pointer;
+    }
+    &.restricted{
+      cursor: not-allowed;
+    }
+  }

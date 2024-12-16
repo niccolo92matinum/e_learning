@@ -1,0 +1,70 @@
+@import "../../../variables.scss";
+
+.draggableItem{
+    //display: flex;
+    position: relative;
+    margin: 10px 0;
+    align-items: center;
+    cursor: pointer;        
+    .itemKey{
+        background-color: $colorMain;
+        color: #FFF;
+        border-radius: 100%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: -12px;
+        z-index: 99;
+    }
+    .itemKey_not_clicked{
+        border: 2px solid  $colorMain;
+        background-color: #FFF;
+        color: gray;
+        border-radius: 100%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: -12px;
+        z-index: 99;
+    }
+    .itemDesc{
+        background-color: $colorLightGrey;
+        box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        color: $colorMain;
+        flex: 1 0 auto;
+        padding: 10px;
+        padding-left: 20px;
+    }
+    &.ok{
+        cursor: default;                 
+        .itemDesc{
+            background-color: $greenColor;
+            color: #FFF;
+        }
+        .itemKey{
+            background-color: #FFF;
+            border: 1px solid $greenColor;
+            color: $greenColor;
+        }
+    }
+    &.ko{
+        cursor: default;
+        .itemDesc{
+            background-color: $redColor;
+            color: #FFF;
+        }
+        .itemKey{
+            background-color: #FFF;
+            border: 1px solid $redColor;
+            color:$redColor;
+        }
+    }
+}
+
+
+
+

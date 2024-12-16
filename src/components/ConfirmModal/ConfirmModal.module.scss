@@ -1,0 +1,86 @@
+@import '../../variables.scss';
+.overflowModal{
+    z-index: $zindexModal;
+    background-color: rgba(256, 256, 256, 0.7);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    .containerModal{
+        position: relative;
+        width: 90%;
+        max-width: 400px;
+        margin: auto;
+        // background: #fff;
+        border-radius: .25em .25em .4em .4em;
+        text-align: center;
+        // box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        -webkit-transform: translateY(-40px);
+        -moz-transform: translateY(-40px);
+        -ms-transform: translateY(-40px);
+        -o-transform: translateY(-40px);        
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-backface-visibility: hidden;
+        -webkit-transition-property: -webkit-transform;
+        -moz-transition-property: -moz-transform;
+        transition-property: transform;
+        -webkit-transition-duration: .3s;
+        -moz-transition-duration: .3s;
+        transition-duration: .3s;    
+        > p{
+            padding: 20px 0;
+            font-size: 2em;
+            line-height: 1.2;
+        }
+        > div {
+            // list-style: none;
+            margin: 0;
+            padding: 0;
+            height: 65px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+
+            > button {
+                float: left;
+                // width: calc(50% - 10px);
+                border-radius: 4px;
+                display: block;
+                // height: 60px;
+                // line-height: 60px;
+                text-transform: uppercase;                    
+                -webkit-transition: background-color .2s;
+                -moz-transition: background-color .2s;
+                transition: background-color .2s;
+                font-weight: bold;
+                cursor: pointer;
+                margin: 0 5px;
+                padding: 8px 16px;
+                min-width: 128px;
+                font-weight: 700;
+                font-size: 1.2em;
+                line-height: 1.5;
+                -webkit-box-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-transform: inherit;
+                -webkit-box-flex: 1;
+
+                &:first-of-type{
+                    border: 2px solid $colorMain;
+                    background: $colorMain;
+                    color: $colorMainWhite;
+                }
+                &:last-of-type{
+                    border: 2px solid $colorMainBlack;
+                    background: $colorMainWhite;
+                    color: $colorMainBlack;                    
+                }
+            }
+        }
+    }
+}

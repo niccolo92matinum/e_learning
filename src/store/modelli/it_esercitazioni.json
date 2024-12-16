@@ -1,0 +1,476 @@
+{
+  "cancel": "Annulla",
+  "chooseAnOption": "Scegli un'opzione",
+  "confirm": "Conferma",
+  "confirmBeginText": "Vuoi riprendere dal punto di interruzione precedente?",
+  "course": "Corso",
+  "courseTitle": "D.Lgs. 231/2001 e Responsabilità Amministrativa degli enti",
+  "finalProfileResult_ko": "Non hai superato il test!",
+  "finalProfileResult_ok": "Complimenti hai superato il test!",
+  "final_profile": "Profilo finale",
+  "greetings": "Ciao",
+  "innerDoughnut": "Completato",
+  "solution":"Soluzione",
+  "modules": {
+    "1": {
+      "childIds": [
+        1
+      ],
+      "id": 1,
+      "title": "Codice Etico"
+    }
+  },
+  "lessons": {
+    "1": {
+      "childIds": [
+        1,2,3,4,5,6,7
+      ],
+      "id": 1,
+      "title": ""
+    }
+  },
+  "pages": {
+    "1": {
+      "id": 1,
+      "title": "Kit di allenamento 2/2",
+      "childIds": [1],
+      "audioTranscription": "<p>Il primo passo per creare la matrice di Eisenhower è distinguere le attività urgenti da quelle importanti.</p><p>Le attività urgenti sono quelle che richiedono la tua immediata attenzione. Quando qualcosa è urgente, deve essere fatto subito e ci sono delle chiare conseguenze se non la porti a termine entro un dato periodo di tempo.</p><p>Le attività importanti, invece, potrebbero non richiedere immediata attenzione, ma servono per raggiungere i tuoi obiettivi a lungo termine. Il fatto che queste attività siano meno urgenti non significa che non siano importanti, anzi dovrai pianificarle attentamente per usare le tue risorse in maniera efficiente.</p><p>Una volta effettuata la distinzione tra attività urgenti e importanti, sarà semplice suddividerle nei quattro quadranti della Matrice di Eisenhower:</p><p>Quadrante 1 - Crisi: urgente e importante</p><p>Quadrante 2 - Qualità: importante e non urgente</p><p>Quadrante 3 - Inganno: urgente e non importante</p><p>Quadrante 4 - Spreco: non importante e non urgente</p><p>Esplorali per saperne di più.</p>"
+    },
+    "2": {
+      "audioTranscription": "<p>Crediamo fermamente che il successo di un’azienda derivi dalla sua capacità di condurre gli affari in maniera etica.</p><p>Per questo abbiamo adottato il Codice Etico,</p><p>uno strumento destinato ad Amministratori, Sindaci, dirigenti e dipendenti del Gruppo Prometeon ma non solo!</p><p>Il Codice, infatti, si rivolge a tutti coloro che operano per conto o in favore del Gruppo Prometeon, o che intrattengono relazioni di affari con il Gruppo.</p><p>Tutte queste persone, nell’ambito delle proprie funzioni e responsabilità, sono tenute al rispetto dei principi e delle prescrizioni</p><p>contenute nel Codice Etico.</p><p>Ma quali sono questi principi e prescrizioni?</p><p>Scopriamoli insieme!</p>",
+      "id": 2,
+      "title": "Introduzione",
+      "childIds": [2],
+      "--videoSrc": "01_02"
+    },
+    "3": {
+      "audioTranscription": "<p>Crediamo fermamente che il successo di un’azienda derivi dalla sua capacità di condurre gli affari in maniera etica.</p><p>Per questo abbiamo adottato il Codice Etico,</p><p>uno strumento destinato ad Amministratori, Sindaci, dirigenti e dipendenti del Gruppo Prometeon ma non solo!</p><p>Il Codice, infatti, si rivolge a tutti coloro che operano per conto o in favore del Gruppo Prometeon, o che intrattengono relazioni di affari con il Gruppo.</p><p>Tutte queste persone, nell’ambito delle proprie funzioni e responsabilità, sono tenute al rispetto dei principi e delle prescrizioni</p><p>contenute nel Codice Etico.</p><p>Ma quali sono questi principi e prescrizioni?</p><p>Scopriamoli insieme!</p>",
+      "id": 3,
+      "title": "Introduzione",
+      "--videoSrc": "01_03",
+      "childIds": [
+        3
+      ]
+    },
+    "4": {
+      "audioTranscription": "<p>Crediamo fermamente che il successo di un’azienda derivi dalla sua capacità di condurre gli affari in maniera etica.</p><p>Per questo abbiamo adottato il Codice Etico,</p><p>uno strumento destinato ad Amministratori, Sindaci, dirigenti e dipendenti del Gruppo Prometeon ma non solo!</p><p>Il Codice, infatti, si rivolge a tutti coloro che operano per conto o in favore del Gruppo Prometeon, o che intrattengono relazioni di affari con il Gruppo.</p><p>Tutte queste persone, nell’ambito delle proprie funzioni e responsabilità, sono tenute al rispetto dei principi e delle prescrizioni</p><p>contenute nel Codice Etico.</p><p>Ma quali sono questi principi e prescrizioni?</p><p>Scopriamoli insieme!</p>",
+      "id": 4,
+      "childIds": [4],
+      "title": "Introduzione",
+      "--videoSrc": "01_04"
+    },
+    "5": {
+      "audioTranscription": "<p>Crediamo fermamente che il successo di un’azienda derivi dalla sua capacità di condurre gli affari in maniera etica.</p><p>Per questo abbiamo adottato il Codice Etico,</p><p>uno strumento destinato ad Amministratori, Sindaci, dirigenti e dipendenti del Gruppo Prometeon ma non solo!</p><p>Il Codice, infatti, si rivolge a tutti coloro che operano per conto o in favore del Gruppo Prometeon, o che intrattengono relazioni di affari con il Gruppo.</p><p>Tutte queste persone, nell’ambito delle proprie funzioni e responsabilità, sono tenute al rispetto dei principi e delle prescrizioni</p><p>contenute nel Codice Etico.</p><p>Ma quali sono questi principi e prescrizioni?</p><p>Scopriamoli insieme!</p>",
+      "id": 5,
+      "childIds": [5],
+      "title": "Introduzione",
+      "--videoSrc": "01_04"
+    },
+    "6": {
+      "audioTranscription": "<p>Crediamo fermamente che il successo di un’azienda derivi dalla sua capacità di condurre gli affari in maniera etica.</p><p>Per questo abbiamo adottato il Codice Etico,</p><p>uno strumento destinato ad Amministratori, Sindaci, dirigenti e dipendenti del Gruppo Prometeon ma non solo!</p><p>Il Codice, infatti, si rivolge a tutti coloro che operano per conto o in favore del Gruppo Prometeon, o che intrattengono relazioni di affari con il Gruppo.</p><p>Tutte queste persone, nell’ambito delle proprie funzioni e responsabilità, sono tenute al rispetto dei principi e delle prescrizioni</p><p>contenute nel Codice Etico.</p><p>Ma quali sono questi principi e prescrizioni?</p><p>Scopriamoli insieme!</p>",
+      "id": 6,
+      "childIds": [6],
+      "title": "Introduzione",
+      "--videoSrc": "01_04"
+    },
+    "7": {
+      "audioTranscription": "<p>Crediamo fermamente che il successo di un’azienda derivi dalla sua capacità di condurre gli affari in maniera etica.</p><p>Per questo abbiamo adottato il Codice Etico,</p><p>uno strumento destinato ad Amministratori, Sindaci, dirigenti e dipendenti del Gruppo Prometeon ma non solo!</p><p>Il Codice, infatti, si rivolge a tutti coloro che operano per conto o in favore del Gruppo Prometeon, o che intrattengono relazioni di affari con il Gruppo.</p><p>Tutte queste persone, nell’ambito delle proprie funzioni e responsabilità, sono tenute al rispetto dei principi e delle prescrizioni</p><p>contenute nel Codice Etico.</p><p>Ma quali sono questi principi e prescrizioni?</p><p>Scopriamoli insieme!</p>",
+      "id": 7,
+      "childIds": [7],
+      "title": "Introduzione",
+      "--videoSrc": "01_04"
+    }
+  },
+  "timings": {
+    "0": {
+      "id": 0,
+      "position": "end",
+      "component": {
+        "id": "",
+        "type": "non_evaluative_test",
+        "title": "Sei pronto?",
+        "isHideFeedback": false,
+        "exercise": {
+          "feedback": {
+            "ok": "La risposta è corretta",
+            "ko": "La risposta non è corretta"
+          },
+          "type": "exercise_draggable",
+          "title": "<p>Testo formattato</p>",
+          "subtitle": "Ordina le voci trascinandole al posto giusto",
+          "score": 0,
+          "attempt": 2,
+          "answers": [
+            {
+              "id": "0",
+              "text": "<p>Energetica</p>",
+              "order": "3"
+            },
+            {
+              "id": "1",
+              "text": "<p>Sinergica</p>",
+              "order": "5"
+            },
+            {
+              "id": "2",
+              "text": "<p>Carismatica</p>",
+              "order": "2"
+            },
+            {
+              "id": "3",
+              "text": "<p>Poliedrica</p>",
+              "order": "4"
+            },
+            {
+              "id": "4",
+              "text": "<p>Attraente</p>",
+              "order": "1"
+            },
+            {
+              "id": "5",
+              "text": "<p>Virtuosa</p>",
+              "order": "6"
+            }
+          ]
+        }
+      }
+      
+    },
+    "1": {
+      "id": 1,
+      "position": "end",
+      "component": {
+        "id": "",
+        "type": "non_evaluative_test",
+        "title": "Sei pronto?",
+        "isHideFeedback": false,
+        "exercise": {
+          "feedback": {
+            "ok": "La risposta è corretta",
+            "ko": "La risposta non è corretta"
+          },
+          "type": "exercise_draggable",
+          "title": "<p>Testo formattato</p>",
+          "subtitle": "Ordina le voci trascinandole al posto giusto",
+          "score": 0,
+          "attempt": 2,
+          "answers": [
+            {
+              "id": "0",
+              "text": "<p>Energetica</p>",
+              "order": "3"
+            },
+            {
+              "id": "1",
+              "text": "<p>Sinergica</p>",
+              "order": "5"
+            },
+            {
+              "id": "2",
+              "text": "<p>Carismatica</p>",
+              "order": "2"
+            },
+            {
+              "id": "3",
+              "text": "<p>Poliedrica</p>",
+              "order": "4"
+            },
+            {
+              "id": "4",
+              "text": "<p>Attraente</p>",
+              "order": "1"
+            },
+            {
+              "id": "5",
+              "text": "<p>Virtuosa</p>",
+              "order": "6"
+            }
+          ]
+        }
+      }
+    },
+    "2": {
+      "id": 2,
+      "position": "end",
+      "component": {
+        "id": "",
+        "type": "non_evaluative_test",
+        "title": "Sei pronto?",
+        "isHideFeedback": false,
+        "exercise": {
+          "feedback": {
+            "ok": "La risposta è corretta",
+            "ko": "La risposta non è corretta. Guarda la soluzione",
+            "retry":"la risposta non è corretta riprova."
+          },
+          "type": "exercise_dropdown",
+          "title": "Titolo ",
+          "subtitle": "Sottotitolo",
+          "score": 1,
+          "attempt": 2,
+          "image": "./assets/images/exercises/00_02.jpg",
+          "mutuallyExclusive": false,
+          "answers": [
+            {
+              "text": "A. definizione 1 bla bla",
+              "correctOptionIndex": 0
+            },
+            {
+              "text": "B. definizione 2 bla bla",
+              "correctOptionIndex": 1
+            },
+            {
+              "text": "C. definizione 3 bla bla",
+              "correctOptionIndex": 2
+            }
+          ],
+          "options": [
+            {
+              "text": "option1"
+            },
+            {
+              "text": "option2"
+            },
+            {
+              "text": "option3"
+            }
+          ]
+        }
+      }
+    },
+    "3": {
+      "id": 3,
+      "position": "end",
+      "component": {
+        "id": "",
+        "type": "non_evaluative_test",
+        "title": "Sei pronto?",
+        "isHideFeedback": false,
+        "exercise": {
+          "feedback": {
+            "ok": "Corretto!",
+            "ko": "Non corretto! Guarda la soluzione",
+            "retry":"Le tue scelte non sono corrette! Riprova!"
+          },
+          "type": "exercise_dropdown_inline",
+          "title": "It’s your turn: fill in the blank spaces with the correct options! 222",
+          "subtitle": "",
+          "score": 0,
+          "attempt": 2,
+          "sentence": "<p>Personal data is the fuel of [[0]]. To protect people&rsquo;s privacy, it is essential to apply norms that are [[1]] and [[2]] . GDPR has all of these features: it holds&nbsp;[[3]] responsible for the use they make of personal data and raises awareness among [[4]]. Organizations are pushed to conform to it to inspire trust in people.&nbsp;<br />Campari Group adopted&nbsp;[[5]] that guarantee conformity to GDPR and a DPO, an expert of&nbsp;[[6]] whose task is to support the Company in complying to the regulation and raise awareness through training and information activities.</p>",
+          "options": [
+            {
+              "0": "GDPR",
+              "1": "digital revolution",
+              "2": "traditional business"
+            },
+            {
+              "0": "Flexible",
+              "1": "rigid",
+              "2": "traditional"
+            },
+            {
+              "0": "State-specific",
+              "1": "oriented on business",
+              "2": "oriented on people’s rights"
+            },
+            {
+              "0": "Organizations",
+              "1": "citizens",
+              "2": "Nations"
+            },
+            {
+              "0": "Organizations",
+              "1": "citizens",
+              "2": "Nations"
+            },
+            {
+              "0": "A computer system",
+              "1": "a strict surveillance system",
+              "2": "a data protection model"
+            },
+            {
+              "0": "Data protection",
+              "1": "digital market",
+              "2": "information technology"
+            }
+          ],
+          "corrects": [
+            1,
+            0,
+            2,
+            0,
+            1,
+            2,
+            0
+          ]
+        }
+      }
+    },
+    "4": {
+      "id": 4,
+      "position": "end",
+      "component": {
+        "id": "",
+        "type": "non_evaluative_test",
+        "title": "Sei pronto?",
+        "isHideFeedback": false,
+        "exercise": {
+          "feedback": {
+            "ok": "La risposta è corretta",
+            "ko": "La risposta non è corretta",
+            "retry":"Le tue scelte non sono corrette! Riprova!"
+          },
+          "type": "exercise_fillDnD",
+          "title": "<p>Titolo formattato</p>",
+          "subtitle": "",
+          "score": 1,
+          "attempt": 2,
+          "sentence": "Ciao io sono {droppable}, ho {droppable}",
+          "words": [
+            "Marco",
+            "Luigi",
+            "Mario",
+            "40",
+            "20",
+            "30"
+          ],
+          "answers": [
+            0,3
+          ]
+        }
+      }
+    },
+    "5": {
+      "id": 5,
+      "position": "end",
+      "component": {
+        "id": "",
+        "type": "non_evaluative_test",
+        "title": "Sei pronto?",
+        "isHideFeedback": false,
+        "exercise": {
+          "feedback": {
+            "ok": "La risposta è corretta",
+            "ko": "La risposta è errata. Guarda la soluzione",
+            "retry":"Le tue scelte non sono corrette! Riprova!"
+          },
+          "type": "exercise_multiple",
+          "title": "Titolo",
+          "subtitle": "Sottotitolo",
+          "score": 0,
+          "attempt": 2,
+          "answers": [
+            {
+              "text": "Testo risposta 1",
+              "correct": true
+            },
+            {
+              "text": "Testo risposta 2",
+            
+              "correct": true
+            },
+            {
+              "text": "Testo risposta 3"
+              
+            }
+          ]
+        }
+      }
+    },
+    "6": {
+      "id": 6,
+      "position": "end",
+      "component": {
+        "id": "",
+        "type": "non_evaluative_test",
+        "title": "Sei pronto?",
+        "isHideFeedback": false,
+        "exercise": {
+          "feedback": {
+            "ok": "La risposta è corretta",
+            "ko": "La risposta non è corretta. Guarda la soluzione",
+            "retry":"Le tua risposta non è corretta! Riprova!"
+          },
+          "type": "exercise_single",
+          "title": "Titolo",
+          "subtitle": "Sottotitolo",
+          "score": 0,
+          "attempt": 2,
+          "answers": [
+            {
+              "text": "Testo risposta 1",
+              "correct": true
+            },
+            {
+              "text": "Testo risposta 2"
+            },
+            {
+              "text": "Testo risposta 3"
+            }
+          ]
+        }
+      }
+    },
+    "7": {
+      "id": 7,
+      "position": "end",
+      "component": {
+        "id": "",
+        "type": "non_evaluative_test",
+        "title": "Sei pronto?",
+        "isHideFeedback": false,
+        "exercise": {
+          "feedback": {
+            "ok": "La risposta è corretta",
+            "ko": "La risposta non è corretta. Guarda la soluzione.",
+            "retry":"Le tua risposta non è corretta! Riprova!"
+          },
+          "type": "exercise_yesorno",
+          "title": "<p>Titolo</p>",
+          "subtitle": "",
+          "score": 0,
+          "attempt": 2,
+          "questions": [
+            "Marrakesh è la capitale del Marocco",
+            "Alexander Fleming ha scoperto la penicillina",
+            "L'Alaska è il più grande stato d'America in miglia quadrate",
+            "Ci sono 5 tipi di gruppo sanguigno"
+          ],
+          "yes": "Vero",
+          "no": "Falso",
+          "corrects": [
+            1,
+            0,
+            0,
+            1
+          ]
+        }
+      }
+    }
+  },
+  "maxScore": "Punteggio massimo",
+  
+  "next_question": "Avanti",
+  "no": "NO",
+  "of": "di",
+  
+  "passScore": "Percentuale superamento test",
+  "pdfDocument": "docs/Regolamento.pdf",
+  "prev_question": "Indietro",
+  "question_count": "Domanda {current} di {total}",
+  "question": "Domanda",
+  "questions": "Domande",
+  "retry": "Riprova",
+  "review": "Ripasso",
+  "given_answer": "Risposta data",
+  "result": "Esito",
+  "select": "Seleziona",
+  "skip": "Salta",
+  "start": "Inizia",
+  "subtitles": "Sottotitoli",
+  
+  "tooltip_next": "Clicca qui per continuare",
+  "totalScore": "Il tuo punteggio è: ",
+  "yes": "SI"
+}

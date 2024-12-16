@@ -1,0 +1,2346 @@
+{
+  "controlsVideoJs": false,
+  "restricted": false,
+  "disableDevtool": false,
+  "landingPageVisible": false,
+  "isDebug": true,
+  "editMode": false,
+  "currentPage": {
+    "idModule": null,
+    "idLesson": null,
+    "idPage": null
+  },
+  "autoNext": false,
+  "lang": {
+    "currentLang": "it"
+  },
+  "index": {
+    "visible": true,
+    "showAllLessons": true
+  },
+  "pageNav": {
+    "visible": true
+  },
+  "fullscreen": {
+    "visible": false
+  },
+  "help": {
+    "visible": false
+  },
+  "languages": [
+    {
+      "small_title": "cg",
+      "long_title": "Republic of the Congo",
+      "enabled": true,
+      "img": "./assets/lang/021-republic of the congo.svg"
+    },
+    {
+      "small_title": "br",
+      "long_title": "Brazil",
+      "enabled": false,
+      "img": "./assets/lang/022-brazil.svg"
+    },
+    {
+      "small_title": "lk",
+      "long_title": "Sri Lanka",
+      "enabled": false,
+      "img": "./assets/lang/023-sri lanka.svg"
+    },
+    {
+      "small_title": "sz",
+      "long_title": "Swaziland",
+      "enabled": false,
+      "img": "./assets/lang/024-swaziland.svg"
+    },
+    {
+      "small_title": "tj",
+      "long_title": "Tajikistan",
+      "enabled": false,
+      "img": "./assets/lang/025-tajikistan.svg"
+    },
+    {
+      "small_title": "tt",
+      "long_title": "Trinidad and Tobago",
+      "enabled": false,
+      "img": "./assets/lang/026-trinidad and tobago.svg"
+    },
+    {
+      "small_title": "pf",
+      "long_title": "French Polynesia",
+      "enabled": false,
+      "img": "./assets/lang/027-french polynesia.svg"
+    },
+    {
+      "small_title": "pt",
+      "long_title": "Madeira",
+      "enabled": false,
+      "img": "./assets/lang/028-madeira.svg"
+    },
+    {
+      "small_title": "mv",
+      "long_title": "Maldives",
+      "enabled": false,
+      "img": "./assets/lang/029-maldives.svg"
+    },
+    {
+      "small_title": "md",
+      "long_title": "Moldova",
+      "enabled": false,
+      "img": "./assets/lang/030-moldova.svg"
+    },
+    {
+      "small_title": "me",
+      "long_title": "Montenegro",
+      "enabled": false,
+      "img": "./assets/lang/031-montenegro.svg"
+    },
+    {
+      "small_title": "pg",
+      "long_title": "Papua New Guinea",
+      "enabled": false,
+      "img": "./assets/lang/032-papua new guinea.svg"
+    },
+    {
+      "small_title": "mx",
+      "long_title": "Mexico",
+      "enabled": false,
+      "img": "./assets/lang/033-mexico.svg"
+    },
+    {
+      "small_title": "cn",
+      "long_title": "Tibet",
+      "enabled": false,
+      "img": "./assets/lang/034-tibet.svg"
+    },
+    {
+      "small_title": "tl",
+      "long_title": "East Timor",
+      "enabled": false,
+      "img": "./assets/lang/035-East Timor.svg"
+    },
+    {
+      "small_title": "ly",
+      "long_title": "Libya",
+      "enabled": false,
+      "img": "./assets/lang/036-libya.svg"
+    },
+    {
+      "small_title": "n/a",
+      "long_title": "NATO",
+      "enabled": false,
+      "img": "./assets/lang/037-nato.svg"
+    },
+    {
+      "small_title": "mk",
+      "long_title": "Republic of Macedonia",
+      "enabled": false,
+      "img": "./assets/lang/038-republic of macedonia.svg"
+    },
+    {
+      "small_title": "eh",
+      "long_title": "Sahrawi Arab Democratic Republic",
+      "enabled": false,
+      "img": "./assets/lang/039-sahrawi arab democratic republic.svg"
+    },
+    {
+      "small_title": "sd",
+      "long_title": "Sudan",
+      "enabled": false,
+      "img": "./assets/lang/040-sudan.svg"
+    },
+    {
+      "small_title": "uz",
+      "long_title": "Uzbekistan",
+      "enabled": false,
+      "img": "./assets/lang/041-uzbekist\u00e1n.svg"
+    },
+    {
+      "small_title": "ye",
+      "long_title": "Yemen",
+      "enabled": false,
+      "img": "./assets/lang/042-yemen.svg"
+    },
+    {
+      "small_title": "li",
+      "long_title": "Liechtenstein",
+      "enabled": false,
+      "img": "./assets/lang/045-liechtenstein.svg"
+    },
+    {
+      "small_title": "n/a",
+      "long_title": "Northern Cyprus",
+      "enabled": false,
+      "img": "./assets/lang/046-northern cyprus.svg"
+    },
+    {
+      "small_title": "sm",
+      "long_title": "San Marino",
+      "enabled": false,
+      "img": "./assets/lang/047-san marino.svg"
+    },
+    {
+      "small_title": "bl",
+      "long_title": "Saint Barth\u00e9lemy",
+      "enabled": false,
+      "img": "./assets/lang/048-st barts.svg"
+    },
+    {
+      "small_title": "cw",
+      "long_title": "Cura\u00e7ao",
+      "enabled": false,
+      "img": "./assets/lang/049-curacao.svg"
+    },
+    {
+      "small_title": "dj",
+      "long_title": "Djibouti",
+      "enabled": false,
+      "img": "./assets/lang/050-djibouti.svg"
+    },
+    {
+      "small_title": "er",
+      "long_title": "Eritrea",
+      "enabled": false,
+      "img": "./assets/lang/051-eritrea.svg"
+    },
+    {
+      "small_title": "gw",
+      "long_title": "Guinea-Bissau",
+      "enabled": false,
+      "img": "./assets/lang/052-guinea bissau.svg"
+    },
+    {
+      "small_title": "kg",
+      "long_title": "Kyrgyzstan",
+      "enabled": false,
+      "img": "./assets/lang/053-kyrgyzstan.svg"
+    },
+    {
+      "small_title": "ml",
+      "long_title": "Mali",
+      "enabled": false,
+      "img": "./assets/lang/054-mali.svg"
+    },
+    {
+      "small_title": "in",
+      "long_title": "India",
+      "enabled": false,
+      "img": "./assets/lang/055-india.svg"
+    },
+    {
+      "small_title": "mh",
+      "long_title": "Marshall Islands",
+      "enabled": false,
+      "img": "./assets/lang/056-marshall island.svg"
+    },
+    {
+      "small_title": "fm",
+      "long_title": "Micronesia",
+      "enabled": false,
+      "img": "./assets/lang/057-micronesia.svg"
+    },
+    {
+      "small_title": "ne",
+      "long_title": "Niger",
+      "enabled": false,
+      "img": "./assets/lang/058-niger.svg"
+    },
+    {
+      "small_title": "nf",
+      "long_title": "Norfolk Island",
+      "enabled": false,
+      "img": "./assets/lang/059-norfolk island.svg"
+    },
+    {
+      "small_title": "st",
+      "long_title": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+      "enabled": false,
+      "img": "./assets/lang/060-sao tome and prince.svg"
+    },
+    {
+      "small_title": "it",
+      "long_title": "Sardinia",
+      "enabled": false,
+      "img": "./assets/lang/061-sardinia.svg"
+    },
+    {
+      "small_title": "bt",
+      "long_title": "Bhutan",
+      "enabled": false,
+      "img": "./assets/lang/062-bhutan.svg"
+    },
+    {
+      "small_title": "so",
+      "long_title": "Somalia",
+      "enabled": false,
+      "img": "./assets/lang/063-somalia.svg"
+    },
+    {
+      "small_title": "sr",
+      "long_title": "Suriname",
+      "enabled": false,
+      "img": "./assets/lang/064-suriname.svg"
+    },
+    {
+      "small_title": "code_65",
+      "long_title": "Language 65",
+      "enabled": false,
+      "img": "./assets/lang/lang_65.svg"
+    },
+    {
+      "small_title": "code_66",
+      "long_title": "Language 66",
+      "enabled": false,
+      "img": "./assets/lang/lang_66.svg"
+    },
+    {
+      "small_title": "code_67",
+      "long_title": "Language 67",
+      "enabled": false,
+      "img": "./assets/lang/lang_67.svg"
+    },
+    {
+      "small_title": "code_68",
+      "long_title": "Language 68",
+      "enabled": false,
+      "img": "./assets/lang/lang_68.svg"
+    },
+    {
+      "small_title": "code_69",
+      "long_title": "Language 69",
+      "enabled": false,
+      "img": "./assets/lang/lang_69.svg"
+    },
+    {
+      "small_title": "code_70",
+      "long_title": "Language 70",
+      "enabled": false,
+      "img": "./assets/lang/lang_70.svg"
+    },
+    {
+      "small_title": "code_71",
+      "long_title": "Language 71",
+      "enabled": false,
+      "img": "./assets/lang/lang_71.svg"
+    },
+    {
+      "small_title": "code_72",
+      "long_title": "Language 72",
+      "enabled": false,
+      "img": "./assets/lang/lang_72.svg"
+    },
+    {
+      "small_title": "code_73",
+      "long_title": "Language 73",
+      "enabled": false,
+      "img": "./assets/lang/lang_73.svg"
+    },
+    {
+      "small_title": "code_74",
+      "long_title": "Language 74",
+      "enabled": false,
+      "img": "./assets/lang/lang_74.svg"
+    },
+    {
+      "small_title": "code_75",
+      "long_title": "Language 75",
+      "enabled": false,
+      "img": "./assets/lang/lang_75.svg"
+    },
+    {
+      "small_title": "code_76",
+      "long_title": "Language 76",
+      "enabled": false,
+      "img": "./assets/lang/lang_76.svg"
+    },
+    {
+      "small_title": "code_77",
+      "long_title": "Language 77",
+      "enabled": false,
+      "img": "./assets/lang/lang_77.svg"
+    },
+    {
+      "small_title": "code_78",
+      "long_title": "Language 78",
+      "enabled": false,
+      "img": "./assets/lang/lang_78.svg"
+    },
+    {
+      "small_title": "code_79",
+      "long_title": "Language 79",
+      "enabled": false,
+      "img": "./assets/lang/lang_79.svg"
+    },
+    {
+      "small_title": "code_80",
+      "long_title": "Language 80",
+      "enabled": false,
+      "img": "./assets/lang/lang_80.svg"
+    },
+    {
+      "small_title": "code_81",
+      "long_title": "Language 81",
+      "enabled": false,
+      "img": "./assets/lang/lang_81.svg"
+    },
+    {
+      "small_title": "code_82",
+      "long_title": "Language 82",
+      "enabled": false,
+      "img": "./assets/lang/lang_82.svg"
+    },
+    {
+      "small_title": "code_83",
+      "long_title": "Language 83",
+      "enabled": false,
+      "img": "./assets/lang/lang_83.svg"
+    },
+    {
+      "small_title": "code_84",
+      "long_title": "Language 84",
+      "enabled": false,
+      "img": "./assets/lang/lang_84.svg"
+    },
+    {
+      "small_title": "code_85",
+      "long_title": "Language 85",
+      "enabled": false,
+      "img": "./assets/lang/lang_85.svg"
+    },
+    {
+      "small_title": "code_86",
+      "long_title": "Language 86",
+      "enabled": false,
+      "img": "./assets/lang/lang_86.svg"
+    },
+    {
+      "small_title": "code_87",
+      "long_title": "Language 87",
+      "enabled": false,
+      "img": "./assets/lang/lang_87.svg"
+    },
+    {
+      "small_title": "code_88",
+      "long_title": "Language 88",
+      "enabled": false,
+      "img": "./assets/lang/lang_88.svg"
+    },
+    {
+      "small_title": "code_89",
+      "long_title": "Language 89",
+      "enabled": false,
+      "img": "./assets/lang/lang_89.svg"
+    },
+    {
+      "small_title": "code_90",
+      "long_title": "Language 90",
+      "enabled": false,
+      "img": "./assets/lang/lang_90.svg"
+    },
+    {
+      "small_title": "code_91",
+      "long_title": "Language 91",
+      "enabled": false,
+      "img": "./assets/lang/lang_91.svg"
+    },
+    {
+      "small_title": "code_92",
+      "long_title": "Language 92",
+      "enabled": false,
+      "img": "./assets/lang/lang_92.svg"
+    },
+    {
+      "small_title": "code_93",
+      "long_title": "Language 93",
+      "enabled": false,
+      "img": "./assets/lang/lang_93.svg"
+    },
+    {
+      "small_title": "code_94",
+      "long_title": "Language 94",
+      "enabled": false,
+      "img": "./assets/lang/lang_94.svg"
+    },
+    {
+      "small_title": "code_95",
+      "long_title": "Language 95",
+      "enabled": false,
+      "img": "./assets/lang/lang_95.svg"
+    },
+    {
+      "small_title": "code_96",
+      "long_title": "Language 96",
+      "enabled": false,
+      "img": "./assets/lang/lang_96.svg"
+    },
+    {
+      "small_title": "code_97",
+      "long_title": "Language 97",
+      "enabled": false,
+      "img": "./assets/lang/lang_97.svg"
+    },
+    {
+      "small_title": "code_98",
+      "long_title": "Language 98",
+      "enabled": false,
+      "img": "./assets/lang/lang_98.svg"
+    },
+    {
+      "small_title": "code_99",
+      "long_title": "Language 99",
+      "enabled": false,
+      "img": "./assets/lang/lang_99.svg"
+    },
+    {
+      "small_title": "code_100",
+      "long_title": "Language 100",
+      "enabled": false,
+      "img": "./assets/lang/lang_100.svg"
+    },
+    {
+      "small_title": "code_101",
+      "long_title": "Language 101",
+      "enabled": false,
+      "img": "./assets/lang/lang_101.svg"
+    },
+    {
+      "small_title": "code_102",
+      "long_title": "Language 102",
+      "enabled": false,
+      "img": "./assets/lang/lang_102.svg"
+    },
+    {
+      "small_title": "code_103",
+      "long_title": "Language 103",
+      "enabled": false,
+      "img": "./assets/lang/lang_103.svg"
+    },
+    {
+      "small_title": "code_104",
+      "long_title": "Language 104",
+      "enabled": false,
+      "img": "./assets/lang/lang_104.svg"
+    },
+    {
+      "small_title": "code_105",
+      "long_title": "Language 105",
+      "enabled": false,
+      "img": "./assets/lang/lang_105.svg"
+    },
+    {
+      "small_title": "code_106",
+      "long_title": "Language 106",
+      "enabled": false,
+      "img": "./assets/lang/lang_106.svg"
+    },
+    {
+      "small_title": "code_107",
+      "long_title": "Language 107",
+      "enabled": false,
+      "img": "./assets/lang/lang_107.svg"
+    },
+    {
+      "small_title": "code_108",
+      "long_title": "Language 108",
+      "enabled": false,
+      "img": "./assets/lang/lang_108.svg"
+    },
+    {
+      "small_title": "code_109",
+      "long_title": "Language 109",
+      "enabled": false,
+      "img": "./assets/lang/lang_109.svg"
+    },
+    {
+      "small_title": "code_110",
+      "long_title": "Language 110",
+      "enabled": false,
+      "img": "./assets/lang/lang_110.svg"
+    },
+    {
+      "small_title": "code_111",
+      "long_title": "Language 111",
+      "enabled": false,
+      "img": "./assets/lang/lang_111.svg"
+    },
+    {
+      "small_title": "code_112",
+      "long_title": "Language 112",
+      "enabled": false,
+      "img": "./assets/lang/lang_112.svg"
+    },
+    {
+      "small_title": "code_113",
+      "long_title": "Language 113",
+      "enabled": false,
+      "img": "./assets/lang/lang_113.svg"
+    },
+    {
+      "small_title": "code_114",
+      "long_title": "Language 114",
+      "enabled": false,
+      "img": "./assets/lang/lang_114.svg"
+    },
+    {
+      "small_title": "code_115",
+      "long_title": "Language 115",
+      "enabled": false,
+      "img": "./assets/lang/lang_115.svg"
+    },
+    {
+      "small_title": "code_116",
+      "long_title": "Language 116",
+      "enabled": false,
+      "img": "./assets/lang/lang_116.svg"
+    },
+    {
+      "small_title": "code_117",
+      "long_title": "Language 117",
+      "enabled": false,
+      "img": "./assets/lang/lang_117.svg"
+    },
+    {
+      "small_title": "code_118",
+      "long_title": "Language 118",
+      "enabled": false,
+      "img": "./assets/lang/lang_118.svg"
+    },
+    {
+      "small_title": "code_119",
+      "long_title": "Language 119",
+      "enabled": false,
+      "img": "./assets/lang/lang_119.svg"
+    },
+    {
+      "small_title": "code_120",
+      "long_title": "Language 120",
+      "enabled": false,
+      "img": "./assets/lang/lang_120.svg"
+    },
+    {
+      "small_title": "code_121",
+      "long_title": "Language 121",
+      "enabled": false,
+      "img": "./assets/lang/lang_121.svg"
+    },
+    {
+      "small_title": "code_122",
+      "long_title": "Language 122",
+      "enabled": false,
+      "img": "./assets/lang/lang_122.svg"
+    },
+    {
+      "small_title": "code_123",
+      "long_title": "Language 123",
+      "enabled": false,
+      "img": "./assets/lang/lang_123.svg"
+    },
+    {
+      "small_title": "code_124",
+      "long_title": "Language 124",
+      "enabled": false,
+      "img": "./assets/lang/lang_124.svg"
+    },
+    {
+      "small_title": "code_125",
+      "long_title": "Language 125",
+      "enabled": false,
+      "img": "./assets/lang/lang_125.svg"
+    },
+    {
+      "small_title": "code_126",
+      "long_title": "Language 126",
+      "enabled": false,
+      "img": "./assets/lang/lang_126.svg"
+    },
+    {
+      "small_title": "code_127",
+      "long_title": "Language 127",
+      "enabled": false,
+      "img": "./assets/lang/lang_127.svg"
+    },
+    {
+      "small_title": "code_128",
+      "long_title": "Language 128",
+      "enabled": false,
+      "img": "./assets/lang/lang_128.svg"
+    },
+    {
+      "small_title": "code_129",
+      "long_title": "Language 129",
+      "enabled": false,
+      "img": "./assets/lang/lang_129.svg"
+    },
+    {
+      "small_title": "code_130",
+      "long_title": "Language 130",
+      "enabled": false,
+      "img": "./assets/lang/lang_130.svg"
+    },
+    {
+      "small_title": "code_131",
+      "long_title": "Language 131",
+      "enabled": false,
+      "img": "./assets/lang/lang_131.svg"
+    },
+    {
+      "small_title": "code_132",
+      "long_title": "Language 132",
+      "enabled": false,
+      "img": "./assets/lang/lang_132.svg"
+    },
+    {
+      "small_title": "code_133",
+      "long_title": "Language 133",
+      "enabled": false,
+      "img": "./assets/lang/lang_133.svg"
+    },
+    {
+      "small_title": "code_134",
+      "long_title": "Language 134",
+      "enabled": false,
+      "img": "./assets/lang/lang_134.svg"
+    },
+    {
+      "small_title": "code_135",
+      "long_title": "Language 135",
+      "enabled": false,
+      "img": "./assets/lang/lang_135.svg"
+    },
+    {
+      "small_title": "code_136",
+      "long_title": "Language 136",
+      "enabled": false,
+      "img": "./assets/lang/lang_136.svg"
+    },
+    {
+      "small_title": "code_137",
+      "long_title": "Language 137",
+      "enabled": false,
+      "img": "./assets/lang/lang_137.svg"
+    },
+    {
+      "small_title": "code_138",
+      "long_title": "Language 138",
+      "enabled": false,
+      "img": "./assets/lang/lang_138.svg"
+    },
+    {
+      "small_title": "code_139",
+      "long_title": "Language 139",
+      "enabled": false,
+      "img": "./assets/lang/lang_139.svg"
+    },
+    {
+      "small_title": "code_140",
+      "long_title": "Language 140",
+      "enabled": false,
+      "img": "./assets/lang/lang_140.svg"
+    },
+    {
+      "small_title": "code_141",
+      "long_title": "Language 141",
+      "enabled": false,
+      "img": "./assets/lang/lang_141.svg"
+    },
+    {
+      "small_title": "code_142",
+      "long_title": "Language 142",
+      "enabled": false,
+      "img": "./assets/lang/lang_142.svg"
+    },
+    {
+      "small_title": "code_143",
+      "long_title": "Language 143",
+      "enabled": false,
+      "img": "./assets/lang/lang_143.svg"
+    },
+    {
+      "small_title": "code_144",
+      "long_title": "Language 144",
+      "enabled": false,
+      "img": "./assets/lang/lang_144.svg"
+    },
+    {
+      "small_title": "code_145",
+      "long_title": "Language 145",
+      "enabled": false,
+      "img": "./assets/lang/lang_145.svg"
+    },
+    {
+      "small_title": "code_146",
+      "long_title": "Language 146",
+      "enabled": false,
+      "img": "./assets/lang/lang_146.svg"
+    },
+    {
+      "small_title": "code_147",
+      "long_title": "Language 147",
+      "enabled": false,
+      "img": "./assets/lang/lang_147.svg"
+    },
+    {
+      "small_title": "code_148",
+      "long_title": "Language 148",
+      "enabled": false,
+      "img": "./assets/lang/lang_148.svg"
+    },
+    {
+      "small_title": "code_149",
+      "long_title": "Language 149",
+      "enabled": false,
+      "img": "./assets/lang/lang_149.svg"
+    },
+    {
+      "small_title": "code_150",
+      "long_title": "Language 150",
+      "enabled": false,
+      "img": "./assets/lang/lang_150.svg"
+    },
+    {
+      "small_title": "code_151",
+      "long_title": "Language 151",
+      "enabled": false,
+      "img": "./assets/lang/lang_151.svg"
+    },
+    {
+      "small_title": "code_152",
+      "long_title": "Language 152",
+      "enabled": false,
+      "img": "./assets/lang/lang_152.svg"
+    },
+    {
+      "small_title": "code_153",
+      "long_title": "Language 153",
+      "enabled": false,
+      "img": "./assets/lang/lang_153.svg"
+    },
+    {
+      "small_title": "code_154",
+      "long_title": "Language 154",
+      "enabled": false,
+      "img": "./assets/lang/lang_154.svg"
+    },
+    {
+      "small_title": "code_155",
+      "long_title": "Language 155",
+      "enabled": false,
+      "img": "./assets/lang/lang_155.svg"
+    },
+    {
+      "small_title": "code_156",
+      "long_title": "Language 156",
+      "enabled": false,
+      "img": "./assets/lang/lang_156.svg"
+    },
+    {
+      "small_title": "code_157",
+      "long_title": "Language 157",
+      "enabled": false,
+      "img": "./assets/lang/lang_157.svg"
+    },
+    {
+      "small_title": "code_158",
+      "long_title": "Language 158",
+      "enabled": false,
+      "img": "./assets/lang/lang_158.svg"
+    },
+    {
+      "small_title": "code_159",
+      "long_title": "Language 159",
+      "enabled": false,
+      "img": "./assets/lang/lang_159.svg"
+    },
+    {
+      "small_title": "code_160",
+      "long_title": "Language 160",
+      "enabled": false,
+      "img": "./assets/lang/lang_160.svg"
+    },
+    {
+      "small_title": "code_161",
+      "long_title": "Language 161",
+      "enabled": false,
+      "img": "./assets/lang/lang_161.svg"
+    },
+    {
+      "small_title": "code_162",
+      "long_title": "Language 162",
+      "enabled": false,
+      "img": "./assets/lang/lang_162.svg"
+    },
+    {
+      "small_title": "code_163",
+      "long_title": "Language 163",
+      "enabled": false,
+      "img": "./assets/lang/lang_163.svg"
+    },
+    {
+      "small_title": "code_164",
+      "long_title": "Language 164",
+      "enabled": false,
+      "img": "./assets/lang/lang_164.svg"
+    },
+    {
+      "small_title": "code_165",
+      "long_title": "Language 165",
+      "enabled": false,
+      "img": "./assets/lang/lang_165.svg"
+    },
+    {
+      "small_title": "code_166",
+      "long_title": "Language 166",
+      "enabled": false,
+      "img": "./assets/lang/lang_166.svg"
+    },
+    {
+      "small_title": "code_167",
+      "long_title": "Language 167",
+      "enabled": false,
+      "img": "./assets/lang/lang_167.svg"
+    },
+    {
+      "small_title": "code_168",
+      "long_title": "Language 168",
+      "enabled": false,
+      "img": "./assets/lang/lang_168.svg"
+    },
+    {
+      "small_title": "code_169",
+      "long_title": "Language 169",
+      "enabled": false,
+      "img": "./assets/lang/lang_169.svg"
+    },
+    {
+      "small_title": "code_170",
+      "long_title": "Language 170",
+      "enabled": false,
+      "img": "./assets/lang/lang_170.svg"
+    },
+    {
+      "small_title": "code_171",
+      "long_title": "Language 171",
+      "enabled": false,
+      "img": "./assets/lang/lang_171.svg"
+    },
+    {
+      "small_title": "code_172",
+      "long_title": "Language 172",
+      "enabled": false,
+      "img": "./assets/lang/lang_172.svg"
+    },
+    {
+      "small_title": "code_173",
+      "long_title": "Language 173",
+      "enabled": false,
+      "img": "./assets/lang/lang_173.svg"
+    },
+    {
+      "small_title": "code_174",
+      "long_title": "Language 174",
+      "enabled": false,
+      "img": "./assets/lang/lang_174.svg"
+    },
+    {
+      "small_title": "code_175",
+      "long_title": "Language 175",
+      "enabled": false,
+      "img": "./assets/lang/lang_175.svg"
+    },
+    {
+      "small_title": "code_176",
+      "long_title": "Language 176",
+      "enabled": false,
+      "img": "./assets/lang/lang_176.svg"
+    },
+    {
+      "small_title": "code_177",
+      "long_title": "Language 177",
+      "enabled": false,
+      "img": "./assets/lang/lang_177.svg"
+    },
+    {
+      "small_title": "code_178",
+      "long_title": "Language 178",
+      "enabled": false,
+      "img": "./assets/lang/lang_178.svg"
+    },
+    {
+      "small_title": "code_179",
+      "long_title": "Language 179",
+      "enabled": false,
+      "img": "./assets/lang/lang_179.svg"
+    },
+    {
+      "small_title": "code_180",
+      "long_title": "Language 180",
+      "enabled": false,
+      "img": "./assets/lang/lang_180.svg"
+    },
+    {
+      "small_title": "code_181",
+      "long_title": "Language 181",
+      "enabled": false,
+      "img": "./assets/lang/lang_181.svg"
+    },
+    {
+      "small_title": "code_182",
+      "long_title": "Language 182",
+      "enabled": false,
+      "img": "./assets/lang/lang_182.svg"
+    },
+    {
+      "small_title": "code_183",
+      "long_title": "Language 183",
+      "enabled": false,
+      "img": "./assets/lang/lang_183.svg"
+    },
+    {
+      "small_title": "code_184",
+      "long_title": "Language 184",
+      "enabled": false,
+      "img": "./assets/lang/lang_184.svg"
+    },
+    {
+      "small_title": "code_185",
+      "long_title": "Language 185",
+      "enabled": false,
+      "img": "./assets/lang/lang_185.svg"
+    },
+    {
+      "small_title": "code_186",
+      "long_title": "Language 186",
+      "enabled": false,
+      "img": "./assets/lang/lang_186.svg"
+    },
+    {
+      "small_title": "code_187",
+      "long_title": "Language 187",
+      "enabled": false,
+      "img": "./assets/lang/lang_187.svg"
+    },
+    {
+      "small_title": "code_188",
+      "long_title": "Language 188",
+      "enabled": false,
+      "img": "./assets/lang/lang_188.svg"
+    },
+    {
+      "small_title": "code_189",
+      "long_title": "Language 189",
+      "enabled": false,
+      "img": "./assets/lang/lang_189.svg"
+    },
+    {
+      "small_title": "code_190",
+      "long_title": "Language 190",
+      "enabled": false,
+      "img": "./assets/lang/lang_190.svg"
+    },
+    {
+      "small_title": "code_191",
+      "long_title": "Language 191",
+      "enabled": false,
+      "img": "./assets/lang/lang_191.svg"
+    },
+    {
+      "small_title": "code_192",
+      "long_title": "Language 192",
+      "enabled": false,
+      "img": "./assets/lang/lang_192.svg"
+    },
+    {
+      "small_title": "code_193",
+      "long_title": "Language 193",
+      "enabled": false,
+      "img": "./assets/lang/lang_193.svg"
+    },
+    {
+      "small_title": "code_194",
+      "long_title": "Language 194",
+      "enabled": false,
+      "img": "./assets/lang/lang_194.svg"
+    },
+    {
+      "small_title": "code_195",
+      "long_title": "Language 195",
+      "enabled": false,
+      "img": "./assets/lang/lang_195.svg"
+    },
+    {
+      "small_title": "code_196",
+      "long_title": "Language 196",
+      "enabled": false,
+      "img": "./assets/lang/lang_196.svg"
+    },
+    {
+      "small_title": "code_197",
+      "long_title": "Language 197",
+      "enabled": false,
+      "img": "./assets/lang/lang_197.svg"
+    },
+    {
+      "small_title": "code_198",
+      "long_title": "Language 198",
+      "enabled": false,
+      "img": "./assets/lang/lang_198.svg"
+    },
+    {
+      "small_title": "code_199",
+      "long_title": "Language 199",
+      "enabled": false,
+      "img": "./assets/lang/lang_199.svg"
+    },
+    {
+      "small_title": "code_200",
+      "long_title": "Language 200",
+      "enabled": false,
+      "img": "./assets/lang/lang_200.svg"
+    },
+    {
+      "small_title": "code_201",
+      "long_title": "Language 201",
+      "enabled": false,
+      "img": "./assets/lang/lang_201.svg"
+    },
+    {
+      "small_title": "code_202",
+      "long_title": "Language 202",
+      "enabled": false,
+      "img": "./assets/lang/lang_202.svg"
+    },
+    {
+      "small_title": "code_203",
+      "long_title": "Language 203",
+      "enabled": false,
+      "img": "./assets/lang/lang_203.svg"
+    },
+    {
+      "small_title": "code_204",
+      "long_title": "Language 204",
+      "enabled": false,
+      "img": "./assets/lang/lang_204.svg"
+    },
+    {
+      "small_title": "code_205",
+      "long_title": "Language 205",
+      "enabled": false,
+      "img": "./assets/lang/lang_205.svg"
+    },
+    {
+      "small_title": "code_206",
+      "long_title": "Language 206",
+      "enabled": false,
+      "img": "./assets/lang/lang_206.svg"
+    },
+    {
+      "small_title": "code_207",
+      "long_title": "Language 207",
+      "enabled": false,
+      "img": "./assets/lang/lang_207.svg"
+    },
+    {
+      "small_title": "code_208",
+      "long_title": "Language 208",
+      "enabled": false,
+      "img": "./assets/lang/lang_208.svg"
+    },
+    {
+      "small_title": "code_209",
+      "long_title": "Language 209",
+      "enabled": false,
+      "img": "./assets/lang/lang_209.svg"
+    },
+    {
+      "small_title": "code_210",
+      "long_title": "Language 210",
+      "enabled": false,
+      "img": "./assets/lang/lang_210.svg"
+    },
+    {
+      "small_title": "code_211",
+      "long_title": "Language 211",
+      "enabled": false,
+      "img": "./assets/lang/lang_211.svg"
+    },
+    {
+      "small_title": "code_212",
+      "long_title": "Language 212",
+      "enabled": false,
+      "img": "./assets/lang/lang_212.svg"
+    },
+    {
+      "small_title": "code_213",
+      "long_title": "Language 213",
+      "enabled": false,
+      "img": "./assets/lang/lang_213.svg"
+    },
+    {
+      "small_title": "code_214",
+      "long_title": "Language 214",
+      "enabled": false,
+      "img": "./assets/lang/lang_214.svg"
+    },
+    {
+      "small_title": "code_215",
+      "long_title": "Language 215",
+      "enabled": false,
+      "img": "./assets/lang/lang_215.svg"
+    },
+    {
+      "small_title": "code_216",
+      "long_title": "Language 216",
+      "enabled": false,
+      "img": "./assets/lang/lang_216.svg"
+    },
+    {
+      "small_title": "code_217",
+      "long_title": "Language 217",
+      "enabled": false,
+      "img": "./assets/lang/lang_217.svg"
+    },
+    {
+      "small_title": "code_218",
+      "long_title": "Language 218",
+      "enabled": false,
+      "img": "./assets/lang/lang_218.svg"
+    },
+    {
+      "small_title": "code_219",
+      "long_title": "Language 219",
+      "enabled": false,
+      "img": "./assets/lang/lang_219.svg"
+    },
+    {
+      "small_title": "code_220",
+      "long_title": "Language 220",
+      "enabled": false,
+      "img": "./assets/lang/lang_220.svg"
+    },
+    {
+      "small_title": "code_221",
+      "long_title": "Language 221",
+      "enabled": false,
+      "img": "./assets/lang/lang_221.svg"
+    },
+    {
+      "small_title": "code_222",
+      "long_title": "Language 222",
+      "enabled": false,
+      "img": "./assets/lang/lang_222.svg"
+    },
+    {
+      "small_title": "code_223",
+      "long_title": "Language 223",
+      "enabled": false,
+      "img": "./assets/lang/lang_223.svg"
+    },
+    {
+      "small_title": "code_224",
+      "long_title": "Language 224",
+      "enabled": false,
+      "img": "./assets/lang/lang_224.svg"
+    },
+    {
+      "small_title": "code_225",
+      "long_title": "Language 225",
+      "enabled": false,
+      "img": "./assets/lang/lang_225.svg"
+    },
+    {
+      "small_title": "code_226",
+      "long_title": "Language 226",
+      "enabled": false,
+      "img": "./assets/lang/lang_226.svg"
+    },
+    {
+      "small_title": "code_227",
+      "long_title": "Language 227",
+      "enabled": false,
+      "img": "./assets/lang/lang_227.svg"
+    },
+    {
+      "small_title": "code_228",
+      "long_title": "Language 228",
+      "enabled": false,
+      "img": "./assets/lang/lang_228.svg"
+    },
+    {
+      "small_title": "code_229",
+      "long_title": "Language 229",
+      "enabled": false,
+      "img": "./assets/lang/lang_229.svg"
+    },
+    {
+      "small_title": "code_230",
+      "long_title": "Language 230",
+      "enabled": false,
+      "img": "./assets/lang/lang_230.svg"
+    },
+    {
+      "small_title": "code_231",
+      "long_title": "Language 231",
+      "enabled": false,
+      "img": "./assets/lang/lang_231.svg"
+    },
+    {
+      "small_title": "code_232",
+      "long_title": "Language 232",
+      "enabled": false,
+      "img": "./assets/lang/lang_232.svg"
+    }
+  ],
+  "vttLanguages": [
+    {
+      "small_title": "cg",
+      "long_title": "Republic of the Congo",
+      "enabled": false
+    },
+    {
+      "small_title": "br",
+      "long_title": "Brazil",
+      "enabled": false
+    },
+    {
+      "small_title": "lk",
+      "long_title": "Sri Lanka",
+      "enabled": false
+    },
+    {
+      "small_title": "sz",
+      "long_title": "Swaziland",
+      "enabled": false
+    },
+    {
+      "small_title": "tj",
+      "long_title": "Tajikistan",
+      "enabled": false
+    },
+    {
+      "small_title": "tt",
+      "long_title": "Trinidad and Tobago",
+      "enabled": false
+    },
+    {
+      "small_title": "pf",
+      "long_title": "French Polynesia",
+      "enabled": false
+    },
+    {
+      "small_title": "pt",
+      "long_title": "Madeira",
+      "enabled": false
+    },
+    {
+      "small_title": "mv",
+      "long_title": "Maldives",
+      "enabled": false
+    },
+    {
+      "small_title": "md",
+      "long_title": "Moldova",
+      "enabled": false
+    },
+    {
+      "small_title": "me",
+      "long_title": "Montenegro",
+      "enabled": false
+    },
+    {
+      "small_title": "pg",
+      "long_title": "Papua New Guinea",
+      "enabled": false
+    },
+    {
+      "small_title": "mx",
+      "long_title": "Mexico",
+      "enabled": false
+    },
+    {
+      "small_title": "cn",
+      "long_title": "Tibet",
+      "enabled": false
+    },
+    {
+      "small_title": "tl",
+      "long_title": "East Timor",
+      "enabled": false
+    },
+    {
+      "small_title": "ly",
+      "long_title": "Libya",
+      "enabled": false
+    },
+    {
+      "small_title": "n/a",
+      "long_title": "NATO",
+      "enabled": false
+    },
+    {
+      "small_title": "mk",
+      "long_title": "Republic of Macedonia",
+      "enabled": false
+    },
+    {
+      "small_title": "eh",
+      "long_title": "Sahrawi Arab Democratic Republic",
+      "enabled": false
+    },
+    {
+      "small_title": "sd",
+      "long_title": "Sudan",
+      "enabled": false
+    },
+    {
+      "small_title": "uz",
+      "long_title": "Uzbekistan",
+      "enabled": false
+    },
+    {
+      "small_title": "ye",
+      "long_title": "Yemen",
+      "enabled": false
+    },
+    {
+      "small_title": "li",
+      "long_title": "Liechtenstein",
+      "enabled": false
+    },
+    {
+      "small_title": "n/a",
+      "long_title": "Northern Cyprus",
+      "enabled": false
+    },
+    {
+      "small_title": "sm",
+      "long_title": "San Marino",
+      "enabled": false
+    },
+    {
+      "small_title": "bl",
+      "long_title": "Saint Barth\u00e9lemy",
+      "enabled": false
+    },
+    {
+      "small_title": "cw",
+      "long_title": "Cura\u00e7ao",
+      "enabled": false
+    },
+    {
+      "small_title": "dj",
+      "long_title": "Djibouti",
+      "enabled": false
+    },
+    {
+      "small_title": "er",
+      "long_title": "Eritrea",
+      "enabled": false
+    },
+    {
+      "small_title": "gw",
+      "long_title": "Guinea-Bissau",
+      "enabled": false
+    },
+    {
+      "small_title": "kg",
+      "long_title": "Kyrgyzstan",
+      "enabled": false
+    },
+    {
+      "small_title": "ml",
+      "long_title": "Mali",
+      "enabled": false
+    },
+    {
+      "small_title": "in",
+      "long_title": "India",
+      "enabled": false
+    },
+    {
+      "small_title": "mh",
+      "long_title": "Marshall Islands",
+      "enabled": false
+    },
+    {
+      "small_title": "fm",
+      "long_title": "Micronesia",
+      "enabled": false
+    },
+    {
+      "small_title": "ne",
+      "long_title": "Niger",
+      "enabled": false
+    },
+    {
+      "small_title": "nf",
+      "long_title": "Norfolk Island",
+      "enabled": false
+    },
+    {
+      "small_title": "st",
+      "long_title": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+      "enabled": false
+    },
+    {
+      "small_title": "it",
+      "long_title": "Sardinia",
+      "enabled": false
+    },
+    {
+      "small_title": "bt",
+      "long_title": "Bhutan",
+      "enabled": false
+    },
+    {
+      "small_title": "so",
+      "long_title": "Somalia",
+      "enabled": false
+    },
+    {
+      "small_title": "sr",
+      "long_title": "Suriname",
+      "enabled": false
+    },
+    {
+      "small_title": "code_65",
+      "long_title": "Language 65",
+      "enabled": false
+    },
+    {
+      "small_title": "code_66",
+      "long_title": "Language 66",
+      "enabled": false
+    },
+    {
+      "small_title": "code_67",
+      "long_title": "Language 67",
+      "enabled": false
+    },
+    {
+      "small_title": "code_68",
+      "long_title": "Language 68",
+      "enabled": false
+    },
+    {
+      "small_title": "code_69",
+      "long_title": "Language 69",
+      "enabled": false
+    },
+    {
+      "small_title": "code_70",
+      "long_title": "Language 70",
+      "enabled": false
+    },
+    {
+      "small_title": "code_71",
+      "long_title": "Language 71",
+      "enabled": false
+    },
+    {
+      "small_title": "code_72",
+      "long_title": "Language 72",
+      "enabled": false
+    },
+    {
+      "small_title": "code_73",
+      "long_title": "Language 73",
+      "enabled": false
+    },
+    {
+      "small_title": "code_74",
+      "long_title": "Language 74",
+      "enabled": false
+    },
+    {
+      "small_title": "code_75",
+      "long_title": "Language 75",
+      "enabled": false
+    },
+    {
+      "small_title": "code_76",
+      "long_title": "Language 76",
+      "enabled": false
+    },
+    {
+      "small_title": "code_77",
+      "long_title": "Language 77",
+      "enabled": false
+    },
+    {
+      "small_title": "code_78",
+      "long_title": "Language 78",
+      "enabled": false
+    },
+    {
+      "small_title": "code_79",
+      "long_title": "Language 79",
+      "enabled": false
+    },
+    {
+      "small_title": "code_80",
+      "long_title": "Language 80",
+      "enabled": false
+    },
+    {
+      "small_title": "code_81",
+      "long_title": "Language 81",
+      "enabled": false
+    },
+    {
+      "small_title": "code_82",
+      "long_title": "Language 82",
+      "enabled": false
+    },
+    {
+      "small_title": "code_83",
+      "long_title": "Language 83",
+      "enabled": false
+    },
+    {
+      "small_title": "code_84",
+      "long_title": "Language 84",
+      "enabled": false
+    },
+    {
+      "small_title": "code_85",
+      "long_title": "Language 85",
+      "enabled": false
+    },
+    {
+      "small_title": "code_86",
+      "long_title": "Language 86",
+      "enabled": false
+    },
+    {
+      "small_title": "code_87",
+      "long_title": "Language 87",
+      "enabled": false
+    },
+    {
+      "small_title": "code_88",
+      "long_title": "Language 88",
+      "enabled": false
+    },
+    {
+      "small_title": "code_89",
+      "long_title": "Language 89",
+      "enabled": false
+    },
+    {
+      "small_title": "code_90",
+      "long_title": "Language 90",
+      "enabled": false
+    },
+    {
+      "small_title": "code_91",
+      "long_title": "Language 91",
+      "enabled": false
+    },
+    {
+      "small_title": "code_92",
+      "long_title": "Language 92",
+      "enabled": false
+    },
+    {
+      "small_title": "code_93",
+      "long_title": "Language 93",
+      "enabled": false
+    },
+    {
+      "small_title": "code_94",
+      "long_title": "Language 94",
+      "enabled": false
+    },
+    {
+      "small_title": "code_95",
+      "long_title": "Language 95",
+      "enabled": false
+    },
+    {
+      "small_title": "code_96",
+      "long_title": "Language 96",
+      "enabled": false
+    },
+    {
+      "small_title": "code_97",
+      "long_title": "Language 97",
+      "enabled": false
+    },
+    {
+      "small_title": "code_98",
+      "long_title": "Language 98",
+      "enabled": false
+    },
+    {
+      "small_title": "code_99",
+      "long_title": "Language 99",
+      "enabled": false
+    },
+    {
+      "small_title": "code_100",
+      "long_title": "Language 100",
+      "enabled": false
+    },
+    {
+      "small_title": "code_101",
+      "long_title": "Language 101",
+      "enabled": false
+    },
+    {
+      "small_title": "code_102",
+      "long_title": "Language 102",
+      "enabled": false
+    },
+    {
+      "small_title": "code_103",
+      "long_title": "Language 103",
+      "enabled": false
+    },
+    {
+      "small_title": "code_104",
+      "long_title": "Language 104",
+      "enabled": false
+    },
+    {
+      "small_title": "code_105",
+      "long_title": "Language 105",
+      "enabled": false
+    },
+    {
+      "small_title": "code_106",
+      "long_title": "Language 106",
+      "enabled": false
+    },
+    {
+      "small_title": "code_107",
+      "long_title": "Language 107",
+      "enabled": false
+    },
+    {
+      "small_title": "code_108",
+      "long_title": "Language 108",
+      "enabled": false
+    },
+    {
+      "small_title": "code_109",
+      "long_title": "Language 109",
+      "enabled": false
+    },
+    {
+      "small_title": "code_110",
+      "long_title": "Language 110",
+      "enabled": false
+    },
+    {
+      "small_title": "code_111",
+      "long_title": "Language 111",
+      "enabled": false
+    },
+    {
+      "small_title": "code_112",
+      "long_title": "Language 112",
+      "enabled": false
+    },
+    {
+      "small_title": "code_113",
+      "long_title": "Language 113",
+      "enabled": false
+    },
+    {
+      "small_title": "code_114",
+      "long_title": "Language 114",
+      "enabled": false
+    },
+    {
+      "small_title": "code_115",
+      "long_title": "Language 115",
+      "enabled": false
+    },
+    {
+      "small_title": "code_116",
+      "long_title": "Language 116",
+      "enabled": false
+    },
+    {
+      "small_title": "code_117",
+      "long_title": "Language 117",
+      "enabled": false
+    },
+    {
+      "small_title": "code_118",
+      "long_title": "Language 118",
+      "enabled": false
+    },
+    {
+      "small_title": "code_119",
+      "long_title": "Language 119",
+      "enabled": false
+    },
+    {
+      "small_title": "code_120",
+      "long_title": "Language 120",
+      "enabled": false
+    },
+    {
+      "small_title": "code_121",
+      "long_title": "Language 121",
+      "enabled": false
+    },
+    {
+      "small_title": "code_122",
+      "long_title": "Language 122",
+      "enabled": false
+    },
+    {
+      "small_title": "code_123",
+      "long_title": "Language 123",
+      "enabled": false
+    },
+    {
+      "small_title": "code_124",
+      "long_title": "Language 124",
+      "enabled": false
+    },
+    {
+      "small_title": "code_125",
+      "long_title": "Language 125",
+      "enabled": false
+    },
+    {
+      "small_title": "code_126",
+      "long_title": "Language 126",
+      "enabled": false
+    },
+    {
+      "small_title": "code_127",
+      "long_title": "Language 127",
+      "enabled": false
+    },
+    {
+      "small_title": "code_128",
+      "long_title": "Language 128",
+      "enabled": false
+    },
+    {
+      "small_title": "code_129",
+      "long_title": "Language 129",
+      "enabled": false
+    },
+    {
+      "small_title": "code_130",
+      "long_title": "Language 130",
+      "enabled": false
+    },
+    {
+      "small_title": "code_131",
+      "long_title": "Language 131",
+      "enabled": false
+    },
+    {
+      "small_title": "code_132",
+      "long_title": "Language 132",
+      "enabled": false
+    },
+    {
+      "small_title": "code_133",
+      "long_title": "Language 133",
+      "enabled": false
+    },
+    {
+      "small_title": "code_134",
+      "long_title": "Language 134",
+      "enabled": false
+    },
+    {
+      "small_title": "code_135",
+      "long_title": "Language 135",
+      "enabled": false
+    },
+    {
+      "small_title": "code_136",
+      "long_title": "Language 136",
+      "enabled": false
+    },
+    {
+      "small_title": "code_137",
+      "long_title": "Language 137",
+      "enabled": false
+    },
+    {
+      "small_title": "code_138",
+      "long_title": "Language 138",
+      "enabled": false
+    },
+    {
+      "small_title": "code_139",
+      "long_title": "Language 139",
+      "enabled": false
+    },
+    {
+      "small_title": "code_140",
+      "long_title": "Language 140",
+      "enabled": false
+    },
+    {
+      "small_title": "code_141",
+      "long_title": "Language 141",
+      "enabled": false
+    },
+    {
+      "small_title": "code_142",
+      "long_title": "Language 142",
+      "enabled": false
+    },
+    {
+      "small_title": "code_143",
+      "long_title": "Language 143",
+      "enabled": false
+    },
+    {
+      "small_title": "code_144",
+      "long_title": "Language 144",
+      "enabled": false
+    },
+    {
+      "small_title": "code_145",
+      "long_title": "Language 145",
+      "enabled": false
+    },
+    {
+      "small_title": "code_146",
+      "long_title": "Language 146",
+      "enabled": false
+    },
+    {
+      "small_title": "code_147",
+      "long_title": "Language 147",
+      "enabled": false
+    },
+    {
+      "small_title": "code_148",
+      "long_title": "Language 148",
+      "enabled": false
+    },
+    {
+      "small_title": "code_149",
+      "long_title": "Language 149",
+      "enabled": false
+    },
+    {
+      "small_title": "code_150",
+      "long_title": "Language 150",
+      "enabled": false
+    },
+    {
+      "small_title": "code_151",
+      "long_title": "Language 151",
+      "enabled": false
+    },
+    {
+      "small_title": "code_152",
+      "long_title": "Language 152",
+      "enabled": false
+    },
+    {
+      "small_title": "code_153",
+      "long_title": "Language 153",
+      "enabled": false
+    },
+    {
+      "small_title": "code_154",
+      "long_title": "Language 154",
+      "enabled": false
+    },
+    {
+      "small_title": "code_155",
+      "long_title": "Language 155",
+      "enabled": false
+    },
+    {
+      "small_title": "code_156",
+      "long_title": "Language 156",
+      "enabled": false
+    },
+    {
+      "small_title": "code_157",
+      "long_title": "Language 157",
+      "enabled": false
+    },
+    {
+      "small_title": "code_158",
+      "long_title": "Language 158",
+      "enabled": false
+    },
+    {
+      "small_title": "code_159",
+      "long_title": "Language 159",
+      "enabled": false
+    },
+    {
+      "small_title": "code_160",
+      "long_title": "Language 160",
+      "enabled": false
+    },
+    {
+      "small_title": "code_161",
+      "long_title": "Language 161",
+      "enabled": false
+    },
+    {
+      "small_title": "code_162",
+      "long_title": "Language 162",
+      "enabled": false
+    },
+    {
+      "small_title": "code_163",
+      "long_title": "Language 163",
+      "enabled": false
+    },
+    {
+      "small_title": "code_164",
+      "long_title": "Language 164",
+      "enabled": false
+    },
+    {
+      "small_title": "code_165",
+      "long_title": "Language 165",
+      "enabled": false
+    },
+    {
+      "small_title": "code_166",
+      "long_title": "Language 166",
+      "enabled": false
+    },
+    {
+      "small_title": "code_167",
+      "long_title": "Language 167",
+      "enabled": false
+    },
+    {
+      "small_title": "code_168",
+      "long_title": "Language 168",
+      "enabled": false
+    },
+    {
+      "small_title": "code_169",
+      "long_title": "Language 169",
+      "enabled": false
+    },
+    {
+      "small_title": "code_170",
+      "long_title": "Language 170",
+      "enabled": false
+    },
+    {
+      "small_title": "code_171",
+      "long_title": "Language 171",
+      "enabled": false
+    },
+    {
+      "small_title": "code_172",
+      "long_title": "Language 172",
+      "enabled": false
+    },
+    {
+      "small_title": "code_173",
+      "long_title": "Language 173",
+      "enabled": false
+    },
+    {
+      "small_title": "code_174",
+      "long_title": "Language 174",
+      "enabled": false
+    },
+    {
+      "small_title": "code_175",
+      "long_title": "Language 175",
+      "enabled": false
+    },
+    {
+      "small_title": "code_176",
+      "long_title": "Language 176",
+      "enabled": false
+    },
+    {
+      "small_title": "code_177",
+      "long_title": "Language 177",
+      "enabled": false
+    },
+    {
+      "small_title": "code_178",
+      "long_title": "Language 178",
+      "enabled": false
+    },
+    {
+      "small_title": "code_179",
+      "long_title": "Language 179",
+      "enabled": false
+    },
+    {
+      "small_title": "code_180",
+      "long_title": "Language 180",
+      "enabled": false
+    },
+    {
+      "small_title": "code_181",
+      "long_title": "Language 181",
+      "enabled": false
+    },
+    {
+      "small_title": "code_182",
+      "long_title": "Language 182",
+      "enabled": false
+    },
+    {
+      "small_title": "code_183",
+      "long_title": "Language 183",
+      "enabled": false
+    },
+    {
+      "small_title": "code_184",
+      "long_title": "Language 184",
+      "enabled": false
+    },
+    {
+      "small_title": "code_185",
+      "long_title": "Language 185",
+      "enabled": false
+    },
+    {
+      "small_title": "code_186",
+      "long_title": "Language 186",
+      "enabled": false
+    },
+    {
+      "small_title": "code_187",
+      "long_title": "Language 187",
+      "enabled": false
+    },
+    {
+      "small_title": "code_188",
+      "long_title": "Language 188",
+      "enabled": false
+    },
+    {
+      "small_title": "code_189",
+      "long_title": "Language 189",
+      "enabled": false
+    },
+    {
+      "small_title": "code_190",
+      "long_title": "Language 190",
+      "enabled": false
+    },
+    {
+      "small_title": "code_191",
+      "long_title": "Language 191",
+      "enabled": false
+    },
+    {
+      "small_title": "code_192",
+      "long_title": "Language 192",
+      "enabled": false
+    },
+    {
+      "small_title": "code_193",
+      "long_title": "Language 193",
+      "enabled": false
+    },
+    {
+      "small_title": "code_194",
+      "long_title": "Language 194",
+      "enabled": false
+    },
+    {
+      "small_title": "code_195",
+      "long_title": "Language 195",
+      "enabled": false
+    },
+    {
+      "small_title": "code_196",
+      "long_title": "Language 196",
+      "enabled": false
+    },
+    {
+      "small_title": "code_197",
+      "long_title": "Language 197",
+      "enabled": false
+    },
+    {
+      "small_title": "code_198",
+      "long_title": "Language 198",
+      "enabled": false
+    },
+    {
+      "small_title": "code_199",
+      "long_title": "Language 199",
+      "enabled": false
+    },
+    {
+      "small_title": "code_200",
+      "long_title": "Language 200",
+      "enabled": false
+    },
+    {
+      "small_title": "code_201",
+      "long_title": "Language 201",
+      "enabled": false
+    },
+    {
+      "small_title": "code_202",
+      "long_title": "Language 202",
+      "enabled": false
+    },
+    {
+      "small_title": "code_203",
+      "long_title": "Language 203",
+      "enabled": false
+    },
+    {
+      "small_title": "code_204",
+      "long_title": "Language 204",
+      "enabled": false
+    },
+    {
+      "small_title": "code_205",
+      "long_title": "Language 205",
+      "enabled": false
+    },
+    {
+      "small_title": "code_206",
+      "long_title": "Language 206",
+      "enabled": false
+    },
+    {
+      "small_title": "code_207",
+      "long_title": "Language 207",
+      "enabled": false
+    },
+    {
+      "small_title": "code_208",
+      "long_title": "Language 208",
+      "enabled": false
+    },
+    {
+      "small_title": "code_209",
+      "long_title": "Language 209",
+      "enabled": false
+    },
+    {
+      "small_title": "code_210",
+      "long_title": "Language 210",
+      "enabled": false
+    },
+    {
+      "small_title": "code_211",
+      "long_title": "Language 211",
+      "enabled": false
+    },
+    {
+      "small_title": "code_212",
+      "long_title": "Language 212",
+      "enabled": false
+    },
+    {
+      "small_title": "code_213",
+      "long_title": "Language 213",
+      "enabled": false
+    },
+    {
+      "small_title": "code_214",
+      "long_title": "Language 214",
+      "enabled": false
+    },
+    {
+      "small_title": "code_215",
+      "long_title": "Language 215",
+      "enabled": false
+    },
+    {
+      "small_title": "code_216",
+      "long_title": "Language 216",
+      "enabled": false
+    },
+    {
+      "small_title": "code_217",
+      "long_title": "Language 217",
+      "enabled": false
+    },
+    {
+      "small_title": "code_218",
+      "long_title": "Language 218",
+      "enabled": false
+    },
+    {
+      "small_title": "code_219",
+      "long_title": "Language 219",
+      "enabled": false
+    },
+    {
+      "small_title": "code_220",
+      "long_title": "Language 220",
+      "enabled": false
+    },
+    {
+      "small_title": "code_221",
+      "long_title": "Language 221",
+      "enabled": false
+    },
+    {
+      "small_title": "code_222",
+      "long_title": "Language 222",
+      "enabled": false
+    },
+    {
+      "small_title": "code_223",
+      "long_title": "Language 223",
+      "enabled": false
+    },
+    {
+      "small_title": "code_224",
+      "long_title": "Language 224",
+      "enabled": false
+    },
+    {
+      "small_title": "code_225",
+      "long_title": "Language 225",
+      "enabled": false
+    },
+    {
+      "small_title": "code_226",
+      "long_title": "Language 226",
+      "enabled": false
+    },
+    {
+      "small_title": "code_227",
+      "long_title": "Language 227",
+      "enabled": false
+    },
+    {
+      "small_title": "code_228",
+      "long_title": "Language 228",
+      "enabled": false
+    },
+    {
+      "small_title": "code_229",
+      "long_title": "Language 229",
+      "enabled": false
+    },
+    {
+      "small_title": "code_230",
+      "long_title": "Language 230",
+      "enabled": false
+    },
+    {
+      "small_title": "code_231",
+      "long_title": "Language 231",
+      "enabled": false
+    },
+    {
+      "small_title": "code_232",
+      "long_title": "Language 232",
+      "enabled": false
+    }
+  ],
+  "suffixJsonToRead": "",
+  "layoutType": "LAYOUT_BOX"
+}

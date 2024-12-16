@@ -1,0 +1,156 @@
+@import '../../variables';
+.headerContainer {
+  background-color: $headerColor;
+  color: $headerTextColor;
+  height: $headerHeight;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-content: space-between;
+  align-items: center;
+  -ms-scroll-snap-type: x mandatory;
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+
+  .tooltipGoOn {
+    display: block;
+    background-color: $colorLightGrey;
+    z-index: $zindexHeader;
+    position: fixed;
+    color: $colorMainBlack;
+    font-size: 12px;
+    margin-top: 90px;
+    margin-left: 0px;
+    width: 120px;
+    padding: 10px;
+    border-radius: 8px;
+
+    &:after {
+      content: " ";
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: transparent transparent $colorLightGrey;
+    }
+  }
+
+  .nextIcon{
+    /*
+    &:hover{
+      .tooltipGoOn{
+        display: block;
+      }
+    } */
+  }
+
+  > div {
+    height: 100%;
+
+    &:first-of-type {
+      flex: 0 auto;
+      @media(min-width: get-breakpoints("md")){
+        min-width: 255px;
+      }
+      display: flex;
+      align-items: center;
+      height: 100%;
+      margin-left: 16px;
+      width: 100%;
+
+      > div {
+        // display: inline-block;
+
+        &.logoContainer {
+          height: 90%;
+          @media (max-width: get-breakpoints("md")) {
+            display: none;
+          }
+        }
+
+        &.titlePage {
+          padding-left: 2rem;
+          color: $colorMainWhite;
+          font-size: 16px;
+          line-height: 20px;
+          width: auto;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          @media(max-width: get-breakpoints("md")){
+            display: none;
+          }
+
+          > h2 {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+    }
+
+    &:last-of-type {
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      flex: 1 0 auto;
+      justify-content: flex-end;
+
+      .logoContainer {
+        width: 100px;
+        height: 100%;
+        flex: 0;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        margin-left: 16px;
+      }
+
+      .transcriptionIcon {
+        font-size: 25px;
+        font-weight: bold;
+        padding: 0;
+
+        &:hover {
+          transform: scale(1.1);
+          cursor: pointer;
+        }
+      }
+
+      .positionPage {
+        background-color: $colorLightGreen;
+        color: $colorMain;
+        border-radius: 8px;
+        padding: 5px 10px;
+        font-weight: 700;
+        padding: 8px 12px;
+      }
+    }
+  }
+
+  .logo {
+    height: 100%;
+    padding: 7px 10px;
+    box-sizing: border-box;
+  }
+
+  .icon {
+    cursor: pointer;
+    margin: 0 10px;
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .disabledBtn {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+}

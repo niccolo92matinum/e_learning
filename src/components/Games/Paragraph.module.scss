@@ -1,0 +1,12 @@
+@import "../../variables.scss";
+.Paragraph{
+  font-size: 14px;
+  font-weight: 350;
+  text-align: center;
+  color: $clientThirdColor;
+  padding: 10px;
+  letter-spacing: 1.5px;
+  strong{
+    font-weight: 600;
+  }
+}

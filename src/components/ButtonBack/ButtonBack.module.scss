@@ -1,0 +1,31 @@
+@import "../../variables.scss";
+.ButtonBack{
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  transition: 0.3s;
+  text-transform: uppercase;
+
+  margin-right: 10px;
+  background-color: transparent;
+  color: #333;
+  border: 1px solid #333;
+  &:hover{
+    border: 1px solid $colorMain;
+    box-shadow: 0 0 13px #00000066;
+  }
+  &:active{
+    box-shadow: 0 0 8px #00000066;
+  }
+  &.disabled{
+    background-color: #f4f4f4;
+    pointer-events: none;
+  }
+  &.white{
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    color: #e1e1e1;
+    pointer-events: none;
+  }
+}

@@ -1,0 +1,26 @@
+@import "../../variables.scss";
+.ExerciseSingle{
+  position: relative;
+  width: 100%;
+  height: fit-content;  
+  top: 0;
+  left: 0;
+  background-color: #FFF;    
+  height: 100%;
+}
+.btnLeft, .btnRight {
+  span{
+    text-align: center;
+    margin: 0 5px;
+  }
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.timer{
+  text-align: center;
+  background-color: #fff;
+  padding: 15px;
+  display: inline-block;
+  margin: 0 auto;
+}

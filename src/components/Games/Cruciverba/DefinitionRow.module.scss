@@ -1,0 +1,71 @@
+@import '../../../variables.scss';
+.DefinitionRow{
+  font-family: 'Freight', sans-serif;
+  font-weight: 350;
+  color: $clientThirdColor;
+  font-size: 14px;
+  letter-spacing: 2px;
+  border-bottom: 1px solid $lightColor;
+
+  display: inline-block;
+  padding: 5px;
+  margin: 5px;
+  &.preview{
+    cursor: pointer;
+    transition: 0.3s background-color;
+    /*&:hover{
+      background-color: $lightColor;
+    }*/
+    .inputDefinition{
+      div{
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .orientationLabel{
+    span{
+      background-color: $clientThirdColor;
+      color: #fff;
+      text-transform: uppercase;
+      padding: 3px 5px;
+      font-size: 12px;
+      &.confirmed{
+        background-color: $colorOk;
+      }
+      &.ko{
+        background-color: $colorKo;
+      }
+    }
+    margin-bottom: 10px;
+  }
+  .definition{
+    margin-bottom: 5px;
+    display: flex;
+    align-items: flex-start;
+    p{
+      display: inline-block;
+      margin-right: 20px;
+    }
+    img{
+      display: inline-block;
+    }
+  }
+  .inputDefinition{
+    div{
+      margin-bottom: 20px;
+    }
+  }
+
+  .buttonsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p{
+      margin: 10px 0;
+      font-weight: 600;
+      color: $colorMain;
+    }
+  }
+}

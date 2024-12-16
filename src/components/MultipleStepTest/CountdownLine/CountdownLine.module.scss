@@ -1,0 +1,24 @@
+@import '../../../variables';
+.progressBar{
+  height: 6px;
+  border-radius: 0;
+  width: 100%;
+  direction: rtl;
+  flex-shrink: 0;
+}
+.text{
+  text-align: center;
+}
+progress[value]{
+  -webkit-appearance: none;
+  appearance: none;
+}
+progress[value]::-webkit-progress-value {
+  background-color: $colorMain;
+  transition: 0.5s ease-in-out width;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}

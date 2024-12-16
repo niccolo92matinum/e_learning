@@ -1,0 +1,41 @@
+@import "../../../variables.scss";
+
+$cardRatio: 1.5;// 1.6180339887;
+
+.card{
+
+    margin: 0 20px;
+    margin-top: 30px;
+    /*width: calc(100% / 3 - 60px);*/
+    width: 230px;
+    height: calc(230px * $cardRatio);
+    text-align: center;
+    font-size: 1.0em;
+    line-height: 1.2;
+
+    @media (max-width: get-breakpoints("lg")) {
+        width: 140px;
+        margin: 0 10px;
+        margin-top: 15px;
+        height: calc(140px * $cardRatio);
+    }
+
+    .visible{
+        z-index: 10;
+    }
+
+    .flippy-cardContainer {
+        cursor: pointer;
+    }
+
+    h1,h2,h3,h4,h5,h6{
+        margin-bottom: 10px;
+    }
+
+  .frontSide{
+    color: $colorMain;
+  }
+  .backSide{
+    color: $colorMain;
+  }
+}

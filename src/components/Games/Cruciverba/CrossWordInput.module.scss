@@ -1,0 +1,41 @@
+@import "../../../variables.scss";
+.CrossWordInput{
+  input{
+    -webkit-appearance: none;
+    border-radius: 0;
+
+    width: 28px;
+    height: 28px;
+    font-size: 20px;
+    font-family: 'EB Garamond', serif;
+    color: $clientSecondaryColor;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 1px;
+    border: 1px solid $clientSecondaryColor;
+    box-sizing: border-box;
+    padding: 0;
+    &:first-child{
+      margin-left: 0;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+
+    &:disabled{
+      -webkit-text-fill-color: $clientSecondaryColor;
+      opacity: 1;
+      background-color: #fff;
+      pointer-events: none;
+    }
+    &:focus{
+      outline: 1px solid $clientSecondaryColor;
+    }
+    &.filled{
+      background-color: $clientSecondaryColor;
+      color: #fff;
+      -webkit-text-fill-color:#fff;
+      opacity: 1;
+    }
+  }
+}

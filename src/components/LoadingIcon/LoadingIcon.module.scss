@@ -1,0 +1,22 @@
+@import "../../variables.scss";
+.LoadingIcon{
+  height: 30px;
+  width: 30px;
+  border: 2px solid transparent;
+  border-top-color: $colorMain;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+
+  &:before, &:after{
+    content:'';
+    position: absolute;
+    border: 2px solid transparent;
+    border-radius: 50%;
+  }
+
+  @keyframes spin{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+  }
+
+}

@@ -1,0 +1,91 @@
+@import "../../../variables.scss";
+
+/*input non visibile overrided su label before*/
+ul {
+  border: 0;
+  color: $colorMain;
+
+  margin-bottom: 10px;
+  padding: 0.5em 1em;
+  li.select{
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background: $colorLightGrey;
+    color: $colorMain;
+    /*border-radius: 5px;*/
+    padding: 0.2rem 1rem;
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+
+    .icon{
+      margin: 0 10px;
+    }
+
+    &.disabled{
+      cursor: not-allowed;
+      color: $colorMain;
+      opacity: 0.5;
+    }
+
+    .wrapper{
+      display: inline-block;
+      margin-left: 10px;
+    }
+    &.wrong{
+      cursor: default;
+      .choice:first-child{
+        border-bottom: 3px solid #e43d40;
+      }
+    }
+    &.correct{
+      cursor: default;
+      .choice:first-child{
+        border-bottom: 3px solid #18A558;
+      }
+    }
+
+
+    .choice{
+      &:first-child{
+        /*border-radius: 5px;*/
+        /*background-color: $clientSecondaryColor;*/
+        border-bottom: 3px solid $colorMain;
+      }
+      padding: 0.5em 1em;
+      display: inline-block;
+    }
+    &.opened{
+      ul{
+        display: block;
+      }
+    }
+
+    ul{
+      display: none;
+      background: $colorLightGrey;
+      padding: 0;
+      /*border-radius: 5px;*/
+      position: absolute;
+      z-index: $zindexOverlay;
+      list-style: none;
+      box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+      li{
+        padding: 0.5rem 1rem;
+        box-sizing: border-box;
+        transition-property: background-color;
+        transition-duration: 0.3s;
+        background-color: transparent;
+
+        &:hover{
+          /*border-radius: 5px;*/
+          color: #fff;
+          background-color: $colorMain;
+        }
+      }
+    }
+  }
+}

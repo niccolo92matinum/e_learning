@@ -1,0 +1,41 @@
+@import "../../../variables.scss";
+.CrossWordCell{
+  position: relative;
+  width: 17px;
+  height: 17px;
+  text-align: center;
+  transition: background-color 0.3s;
+  vertical-align: middle;
+  text-transform: uppercase;
+  &.fillable{
+    background-color: #fff;
+    border: 1px solid $clientThirdColor;
+  }
+  &.filled{
+    color: #fff;
+    background-color: $clientThirdColor;
+  }
+  .index{
+    position: absolute;
+
+
+    font-weight: 400;
+    font-size: 12px;
+    background: $clientFourthColor;
+    color: #fff;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &.left{
+      top: 0;
+      left: -18px;
+    }
+    &.top{
+      top: -18px;
+      left: 0;
+    }
+  }
+}

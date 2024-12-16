@@ -1,0 +1,36 @@
+@import '../../../variables';
+.bigPlayCustom{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  background-color: rgba(256, 256, 256, 0.0);
+  border-radius: 100%;
+  padding: 10px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  border: solid 1px $colorMainWhite;
+
+  span {
+    height: 24px;
+    width: 18px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    &::before {
+      content: ' ';
+      background: url("data:image/svg+xml,%3Csvg width='21' height='26' viewBox='0 0 21 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.09943 24.0796C3.44445 25.2429 1.16729 24.0421 1.17974 22.0157L1.24196 12.0212L1.24196 3.29003C1.24196 1.16353 3.74309 0.000217722 5.36074 1.38869L18.9614 10.345C20.2929 11.3832 20.2431 13.4096 18.8619 14.3728L9.15599 21.2151' stroke='%23FFFFFF' stroke-width='1.25' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      display: flex;
+      position: static;
+      height: 24px;
+      width: 18px;
+    }
+  }
+}

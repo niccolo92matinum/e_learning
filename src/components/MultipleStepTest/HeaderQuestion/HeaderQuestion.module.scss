@@ -1,0 +1,24 @@
+@import "../../../variables.scss";
+.HeaderQuestion{
+    margin-bottom: 20px;
+    .questionTitle{
+      border-bottom: 5px solid;
+      color: $colorMain;
+      font-size: 2.0em;
+      font-weight: bold;
+      padding: 1rem 0 0.5rem;
+      line-height: 1;
+    }
+    .questionSubtitle{
+      color: $colorMain;
+      font-size: 1.5em;
+      font-style: italic;
+    }
+    .questionCounter{
+      background-color: #FFF;
+      color: $colorMain;
+
+      padding: 10px 0;
+      display: inline-block;
+    }
+}

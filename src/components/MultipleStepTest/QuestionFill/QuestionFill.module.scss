@@ -1,0 +1,51 @@
+
+@import "../../../variables.scss";
+
+
+.dropArea{
+    display: inline-block;
+    &.correct{
+        .draggable{
+            background-color: rgb(24, 165, 88);
+        }
+    }
+    &.wrong{
+        .draggable{
+            background-color: rgb(228, 61, 64);
+        }
+    }
+}
+.droppable{
+    text-decoration: underline;
+    width: fit-content;
+    display: inline-block;
+    text-align: center;
+    border-bottom: 1px solid $clientSecondaryColor;
+    min-width: 50px;
+    margin: 0 10px;
+    height: auto;
+    min-height: 30px;
+    transition: 0.2s background-color;
+    &.over{
+        background-color: red;
+    }
+}
+
+.anwered {
+    border-bottom:0;
+};
+
+.toolbox{
+    display: flex;
+    flex-wrap: wrap;
+    .droppable{
+        border: 1px dashed #FFF;        
+    }
+}
+.draggable{
+    padding: 10px;
+    background-color: $clientSecondaryColor;
+    color: #FFF;
+    margin: 10px;
+    cursor: grab;
+}

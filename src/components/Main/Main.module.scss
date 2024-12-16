@@ -1,0 +1,49 @@
+@import "../../variables";
+.MainContent {
+  background-color: $mainBgColor;
+  color: #000;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: calc(100% - #{$headerHeight});
+/*
+  &.withFooter{
+    height: calc(100% - #{$headerHeight} - #{$footerHeight});
+    .Content{
+      padding-bottom: 0;
+    }
+  }*/
+}
+
+.Content {
+  height: 100%;
+  width: 100%;
+  left: 0%;
+  padding-bottom: #{$footerHeight};
+  position: relative;
+  transition: 1s;
+  &.isSidebarOpened{
+      width: calc(100% - $audioTranslationWidth);
+      left: $audioTranslationWidth;
+  }
+  @media (max-width: get-breakpoints("md")) {
+    &.isSidebarOpened {
+      width: calc(100% - $audioTranslationWidthMobile);
+      left: $audioTranslationWidthMobile;
+    }
+  }
+}
+
+
+
+
+.Video{
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  /*&.isSidebarOpened {
+    !*position: relative;*!
+    !*width: 100% - $audioTranslationWidth;*!
+    !*left: $audioTranslationWidth;*!
+  }*/
+}

@@ -1,0 +1,184 @@
+@import "../../variables.scss";
+.Question{
+  padding: 3.2%;
+  margin: auto;
+ // display: flex;
+  //flex-direction: column;
+  //justify-content: space-between;
+  position: relative;
+  overflow: auto;
+  background-color: #fff;
+  color: $colorMain;
+  height: 100%;
+
+  strong{
+    font-weight: bold;
+  }
+  .answerRow{
+    background: $colorLightGrey;
+    color: $colorMainBlack;
+    padding: 0.75rem 1rem;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+
+  &.question-single, &.question-multiple, &.question-yes-no{
+    .answerRow{
+      padding: 0;
+      label{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0.75rem 3.5rem 1rem;
+      }
+
+      [type="radio"],[type="checkbox"]{
+
+        &:not(:checked), &:checked{
+          position: absolute;
+          left: -9999px;
+          opacity: 0;
+
+          +label{
+            position: relative;
+            padding-left: 55px;
+            cursor: pointer;
+            display: inline-block;
+            line-height: 25px;
+            font-size: 1.1rem;
+            transition: .28s ease;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            height: 100%;
+
+            &.correctAnswer{
+              .check-icon, .check-icon-fill{
+                border-color: rgb(24, 165, 88);
+              }
+              .check-icon-fill{
+                background-color: rgb(24, 165, 88);
+              }
+            }
+          }
+        }
+        &:checked{
+          &.wrong{
+            +label{
+              .check-icon-fill{
+                background-color: rgb(228, 61, 64);
+              }
+              .check-icon, .check-icon-fill{
+                border-color: rgb(228, 61, 64);
+              }
+            }
+          }
+          &.correct{
+            +label{
+              .check-icon{
+                border-color: rgb(24, 165, 88);
+              }
+              .check-icon-fill{
+                background-color: rgb(24, 165, 88);
+              }
+            }
+          }
+        }
+        &:not(:checked){
+          &.correct{
+            .check-icon{
+              border-color: rgb(24, 165, 88);
+            }
+          }
+          +label{
+            .check-icon-fill{
+              z-index: -1;
+              -webkit-transform: scale(0);
+              transform: scale(0);
+            }
+          }
+        }
+      }
+    }
+
+
+  }
+
+  &.question-single{
+    /*input non visibile overrided su label before*/
+    .answerRow{
+      [type="radio"]{
+        +label .check-icon, +label .check-icon-fill{
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+  &.question-multiple{
+    .answerRow{
+      [type="checkbox"]{
+        +label .check-icon, +label .check-icon-fill{
+          border-radius: 0;
+        }
+        }
+      }
+  }
+
+  .check-icon{
+    position: absolute;
+    left: 13px;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 30px;
+    height: 30px;
+    z-index: 0;
+    box-sizing: border-box;
+    transition: .28s ease;
+    border: 3px solid $colorMainBlack;
+  }
+  .check-icon-fill{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    z-index: 0;
+    box-sizing: border-box;
+    transition: .28s ease;
+    background-color: $colorMainBlack;
+    -webkit-transform: scale(0.5);
+    transform: translate(-50%,-50%) scale(0.5);
+  }
+
+  .btnConfirm{
+    margin: 16px 0;
+    border: 1px solid $colorMain;
+    padding: 8px 16px;
+    background-color: $colorMain;
+    color: $colorMainWhite;
+    min-width: 128px;
+    font-weight: 700;
+    font-size: 1.2em;
+    line-height: 1.5;
+    cursor: pointer;
+    border-radius: 4px;
+    -webkit-box-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: inherit;
+    -webkit-box-flex: 1;
+    &:disabled{
+      border-color: #CCC;
+      background-color: #CCC;
+      cursor: not-allowed;
+    }
+    &.secondary{
+      border: 1px solid $colorMain;
+      color: $colorMain;
+      background-color: #FFF;
+      // text-shadow: 0.4px 0 $colorMain;
+    }
+  }
+}

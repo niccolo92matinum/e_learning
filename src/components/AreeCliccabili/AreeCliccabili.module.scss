@@ -1,0 +1,101 @@
+@import '../../variables.scss';
+
+.adaptedSizeToVideo{
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  position: absolute;
+  border: 2px solid $greenColor;
+}
+.ClickArea{
+  cursor: pointer;
+  position: absolute;
+  z-index: 99;
+  padding: 10px;
+  text-align: center;
+  border-radius: 12px;
+
+  &.react-draggable{
+    background-color: rgba(256, 256, 256, 0.5);
+  }
+  &.Viewed{
+    // border: 5px solid red;
+    &:before{
+      content: '';
+      color: $greenColor;
+      background-image: url("public/assets/images/icon-check.svg");
+      background-repeat: no-repeat;
+      width: 50px;
+      height: 50px;
+      display: block;
+      border-radius: 100%;
+      position: absolute;
+    }
+  }
+
+
+}
+
+.PositionFlex{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-wrap: wrap;
+  background-size: cover;
+  background-color: rgba(0,0,0,0.4);
+  .ClickArea{
+    cursor: pointer;
+    height: 20%;
+    margin: 20px;
+    position: relative;
+    width: 20%;
+    background-color: $colorMain;
+    color: $colorMainWhite;
+    h2{
+      font-size: 22px;
+    }
+    @media (max-width: get-breakpoints("md")){
+      h2{
+        font-size: 15px;
+      }
+    }
+    &.pdfSintesiArea{
+      width: 70%;
+      height: 70%;
+      background-color: rgba(255,255,255,0.7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+
+      .flexColumn{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .description{
+          font-size: 20px;
+          margin-bottom: 10px;
+          color: $colorTextPdfSintesi;
+        }
+        .title{
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 25px;
+          text-align: center;
+          color: $colorTextPdfSintesi;
+        }
+      }
+      img{
+        width: 60px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+}
+

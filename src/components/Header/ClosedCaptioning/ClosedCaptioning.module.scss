@@ -1,0 +1,55 @@
+@import '../../../variables';
+
+.ccDropdown{
+    display: block;
+    text-transform: uppercase;
+    padding: 10px 5px;
+    z-index: $zindexOverlay;
+    cursor: pointer;
+    &:after{
+      background-image: url("data:image/svg+xml,%3Csvg aria-hidden='true' focusable='false' data-prefix='fal' data-icon='chevron-down' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512' class='svg-inline--fa fa-chevron-down fa-w-14 fa-3x' fill='%23FFF'%3E%3Cpath d='M443.5 162.6l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L224 351 28.5 155.5c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.7 4.8-12.3.1-17z' class=''%3E%3C/path%3E%3C/svg%3E");
+      width: 15px;
+      height: 15px;
+      display: block;
+      content: "";
+      float: right;
+      right: 0;    
+      margin-left: 8px;
+    }
+    
+    > div{
+        display: none;
+        z-index: 9;
+        position: fixed;
+        background-color: #FFF;
+        color: #000;                
+        width: 72px;
+        text-align: center;        
+        margin-left: -5px;
+        margin-top: 10px;
+        > ul{
+            list-style: none;
+            padding: 0;
+            > li{
+                cursor: pointer;
+                padding: 5px;
+                transition: color 0.3s, background-color 0.3s;
+                &.active, &:hover{
+                    background-color: $clientSecondaryColor;
+                    color: #FFF;
+                }
+            }
+        }
+    }
+    &:hover{
+        background-color: #FFF;
+        color: #333;
+        &:after{
+            background-image: url("data:image/svg+xml,%3Csvg aria-hidden='true' focusable='false' data-prefix='fal' data-icon='chevron-down' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512' class='svg-inline--fa fa-chevron-down fa-w-14 fa-3x' fill='%23333'%3E%3Cpath d='M443.5 162.6l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L224 351 28.5 155.5c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.7 4.8-12.3.1-17z' class=''%3E%3C/path%3E%3C/svg%3E");
+        }
+        > div{
+            display: block;
+        }
+    }
+  }
+  

@@ -1,0 +1,29 @@
+@import '../../variables.scss';
+
+.containerMultilanguage{
+    background-color: $colorMain;
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: space-around;
+    height: 100vh;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    > div{
+        text-align: center;
+        color: #FFF;
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 20px;
+        >img{
+            filter: drop-shadow( 3px 3px 0px rgba(0, 0, 0, .7));
+        }
+        >div{
+            padding-top: 10px;
+            text-shadow: 2px 2px black;
+            font-size: 25px;
+        }        
+    }
+}

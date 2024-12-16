@@ -1,0 +1,19 @@
+.Modal{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 30px;
+  p{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  div{
+    text-align: center;
+  }
+  &::backdrop{
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}

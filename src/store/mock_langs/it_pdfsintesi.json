@@ -1,0 +1,87 @@
+{
+  "cancel": "Annulla",
+  "chooseAnOption": "Scegli un'opzione",
+  "confirm": "Conferma",
+  "confirmBeginText": "Vuoi riprendere dal punto di interruzione precedente?",
+  "course": "Corso",
+  "courseTitle": "D.Lgs. 231/2001 e Responsabilità Amministrativa degli enti",
+  "finalProfileResult_ko": "Il test non è superato!",
+  "finalProfileResult_ok": "Il test è superato!",
+  "final_profile": "Profilo finale",
+  "greetings": "Ciao",
+  "innerDoughnut": "Completato",
+  "lessons": {
+    "1": {
+      "childIds": [
+        1
+      ],
+      "id": 1,
+      "title": "tl"
+    }
+  },
+  "maxScore": "Punteggio massimo",
+  "modules": {
+    "1": {
+      "childIds": [
+        1
+      ],
+      "id": 1,
+      "title": "titolo modulo"
+    }
+  },
+  "next_question": "Avanti",
+  "no": "NO",
+  "of": "di",
+  "pages": {
+    "1": {
+      "audioTranscription": "",
+      "id": 1,
+      "title": "titolo pagina",
+      "childIds": [
+        1
+      ]
+    }
+  },
+  "passScore": "Punteggio per passare il test",
+  "pdfDocument": "docs/Regolamento.pdf",
+  "prev_question": "Indietro",
+  "question_count": "Domanda {current} di {total}",
+  "question": "Domanda",
+  "questions": "Domande",
+  "retry": "Riprova",
+  "review": "Ripasso",
+  "given_answer": "Risposta data",
+  "result": "Esito",
+  "select": "Seleziona",
+  "skip": "Salta",
+  "start": "Inizia",
+  "subtitles": "Sottotitoli",
+  "timings": {
+    "1": {
+      "id": 1,
+      "position": "end",
+      "component": {
+        "id": "",
+        "type": "custom",
+        "tagComponent": "approfondimenti",
+        "props": {
+          "positionType": "flex",
+          "backgroundImage": "sfondo_appro_pdf.jpg",
+          "detailed": [
+            {
+              "popupType": "pdfSintesi",
+              "props": {
+                "description": "Scarica il documento",
+                "title": "gestire e archiviare le informazioni digitali",
+                "link": "./docs/Regolamento.pdf"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "tooltip_next": "Clicca qui per continuare",
+  "totalScore": "Hai totalizzato un punteggio pari al <strong>[[]]%</strong>",
+  "yes": "SI"
+}

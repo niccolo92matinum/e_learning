@@ -1,0 +1,12 @@
+@import "../../../variables.scss";
+
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  > div{
+      &:last-of-type{
+          min-width: 152px;
+      }
+  }
+}

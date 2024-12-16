@@ -1,0 +1,56 @@
+
+// Colors
+$colorMain: #E41F46;
+$colorMainBlack: #1D1D1B;
+$colorMainWhite: #FFFFFF;
+$colorLightGrey: #F3F3F3;
+$colorLightGreen: #A6FF03;
+$colorLightCyan: #0FD9FF;
+$colorTextPdfSintesi: #000;
+
+$clientSecondaryColor: #5495CF;
+$clientThirdColor: #e8e5e3;
+$clientFourthColor: #f7f5f0;
+$videoPlayerControlBarBG: #000;
+$videoPlayerControlBarText: #FFF;
+$videoPlayerProgress: $colorMain; // barra di avanzamento video
+$videoPlayerProgressBg: $colorMainWhite; // sfondo barra di avanzamento video
+
+
+$max-width: 1920px;
+$headerColor: $colorMainBlack;
+$headerTextColor: $colorMainWhite;
+$footerBgColor: #B40C1E;
+$footerColor: #fff;
+$mainBgColor: #222;
+$greenColor: #8CC084;
+$redColor: rgb(228, 61, 64);
+
+$headerHeight: 50px;
+$footerHeight: 8px;
+$audioTranslationWidth: 25%;
+$audioTranslationWidthMobile: 45%;
+
+$popupHeaderHeight: 50px;
+
+$zindexModal: 9000;
+$zindexLandingPage: 8000;
+$zindexOverlay: 7000;
+$zindexBtnContinue: 6000;
+$zindexHeader: 5000;
+
+$container-max-widths: (
+        xs: 319px,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1440px,
+        xxl: 1920px
+);
+
+@function get-breakpoints($key: "md") {
+    @return map-get($container-max-widths, $key);
+}
+
+$font-main: 'Inter', 'Roboto', Arial, Helvetica, sans-serif;
+$font-secondary: 'Inter', 'Roboto', Arial, Helvetica, sans-serif;
