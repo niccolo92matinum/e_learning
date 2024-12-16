@@ -1,4 +1,4 @@
-import React, { useEffect, useState,useRef } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import FeedbackText from "../FeedbackText/FeedbackText";
 import HeaderQuestion from "../HeaderQuestion/HeaderQuestion";
 import { useSelector } from "react-redux";
@@ -12,9 +12,7 @@ import SortableItem from "./SortableItem";
 import { isNil } from "ramda";
 import {useRecoverExercises} from "../../../utils/useRecoverExercisesState.js";
 import CountdownLine from "../CountdownLine/CountdownLine.jsx";
-import { gsap } from "gsap";
-import { useGSAP } from '@gsap/react'; 
-
+import gsap from 'gsap';
 /**
  *
  * @param props
@@ -88,7 +86,6 @@ const QuestionDraggable = (props) => {
     questionsLenght
   } = props;
 
-
   const [feedbackText, setFeedbackText] = useState(null);
   const [userAnswers, setUserAnswers] = useState([]);
   const [currentAttempt, setCurrentAttempt] = useState(recoveredAttempt || 1);
@@ -98,7 +95,6 @@ const QuestionDraggable = (props) => {
     useRecoverExercises(givenAnswers, setUserAnswers);
 
     useEffect(() => {
-      console.log('ciao')
         if (answers.find((a) => isNil(a.id))) {
             console.error("All answers in questionDraggable must have an id");
         }
@@ -183,28 +179,101 @@ const QuestionDraggable = (props) => {
 
   const listRef = useRef();
 
+
+
+  const handleReorder = (clickedId) => {
+    
+    // Capture the initial positions of items
+    const listItems = Array.from(listRef.current.children);
+//controllo se l'elemnto è stato selezionato altrimenti faccio il rollback
+    const isElementChecked = userAnswers.find(el => el.id === clickedId).touched 
+   const checkIfTestStart = userAnswers.some((obj) => obj.touched === true);
+
+let reorderedItems = [];
+if(checkIfTestStart === false){
+  console.log(1)
+  reorderedItems = [
+    ...userAnswers.filter((item) => item.id === clickedId),
+    ...userAnswers.filter((item) => item.id !== clickedId)
+  ];
+}else if(isElementChecked === false && checkIfTestStart === true){
+ 
+  const a = userAnswers.filter((item) => item.touched === true)
+  const b = userAnswers.filter((item) => item.id === clickedId)
+  const c = userAnswers.filter((item) => ((item.id !== clickedId) && (item.touched === false)))
+
+  reorderedItems = [
+    ...userAnswers.filter((item) => item.touched === true),
+    ...userAnswers.filter((item) => item.id === clickedId),
+    ...userAnswers.filter((item) => ((item.id !== clickedId) && (item.touched === false)))
+  ];
+}else if(isElementChecked === true && checkIfTestStart === true){
  
 
+  reorderedItems = [
+    ...userAnswers.filter((item) => (item.id !== clickedId &&  item.touched === true) ),
+    ...userAnswers.filter((item) => item.id === clickedId ),
+    ...userAnswers.filter((item) => item.touched === false )
+  ];
+}
+
+    const reorderedItemsWithNewPosition = reorderedItems.map((el,index) =>{
+      el = {...el,...{position:index}}
+      if(el.id === clickedId &&  el.touched === false ){
+        //el.touched = true
+       el = {...el,...{touched:true}}
+      }else if(el.id === clickedId &&  el.touched === true ){
+        el = {...el,...{touched:false}}
+      }
+      return el;
+    } )
+
+    const initialData = listItems.map((item) => ( {id:item.getAttribute("data-id"),position:item.getAttribute("data-key"),top:item.getBoundingClientRect().top}))
+   
+    listItems.forEach((item, index) => {
+      // After state update, calculate new positions
+      //const newElposition = reorderedItemsWithNewPosition.find(el => el.id === clickedId).position
+
+      //const newpposition = initialData.find(el => Number(el.position) === newElposition).top
+     const prova = reorderedItemsWithNewPosition.find(el => el.id === Number(item.getAttribute("data-id"))).position
+     const newAlign = initialData.find(el => Number(el.position) === prova).top
+     const oldIlign = initialData[index].top
+     
+      let tot = Math.trunc(oldIlign) - Math.trunc(newAlign)
+
+        let newTot = tot
+      if(tot !== 0){
+         newTot = - tot
+      }
+      
+   gsap.to(
+      item,
+      {
+        y: newTot,
+        duration: 0.5,
+        ease: "power1.out",
+       onComplete: () => {
+        gsap.set(item, { clearProps: "all" });
+        setUserAnswers(reorderedItemsWithNewPosition) 
+       }
+      })
+  });
   
+  };
+
 
   return (
-    <div className="Question">
-
+    <div className={"Question"}>
+      { !isNil(countdownTimer) && (countdownTimer > 0) &&  <CountdownLine timer={timer} perc={percTimer}/>}
       <HeaderQuestion
         currentQuestionIndex={currentQuestionIndex}
         title={title}
         subtitle={subtitle}
         questionsLenght={questionsLenght}
       ></HeaderQuestion>
-        <div style={{ position: 'relative',
-                      display: 'flex',
-                      flexDirection: 'column',
-                      gap: '10px',
-                      padding: '10px'}}
-                       ref={listRef}>
+        <div ref={listRef}  style={{touchAction: 'none', position:'relative'}}>
               {userAnswers.map((answer, index) => (
                 <SortableItem
-                
                   key={"di_" + answer.id}
                   id={answer.id}
                   ok={
@@ -221,12 +290,12 @@ const QuestionDraggable = (props) => {
                     attempt <= currentAttempt &&
                     index !== parseInt(answer.order - 1)
                   }
-                  touched={answer.touched}
                   correctOrder={answer.order}
                   index={index}
                   text={answer.text}
+                  handleReorder={handleReorder}
                   position={answer.position}
-                  handleReorder={11}
+                  touched={answer.touched}
                 ></SortableItem>
               ))}
         </div>
@@ -254,101 +323,3 @@ const QuestionDraggable = (props) => {
 };
 
 export default QuestionDraggable;
-
-
-/*
-
-<div className={"Question"}>
-      { !isNil(countdownTimer) && (countdownTimer > 0) &&  <CountdownLine timer={timer} perc={percTimer}/>}
-      <HeaderQuestion
-        currentQuestionIndex={currentQuestionIndex}
-        title={title}
-        subtitle={subtitle}
-        questionsLenght={questionsLenght}
-      ></HeaderQuestion>
-        <div style={{touchAction: 'none'}}>
-          <DndContext collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
-            <SortableContext
-              disabled={props.confirmed}
-              items={userAnswers}
-              strategy={verticalListSortingStrategy}
-            >
-              {userAnswers.map((answer, index) => (
-                <SortableItem
-                  key={"di_" + answer.id}
-                  id={answer.id}
-                  ok={
-                      !isHideFeedback &&
-                    props.confirmed &&
-                    (areAnsweredCorrect() ||
-                      (attempt && attempt <= currentAttempt)) &&
-                    index === parseInt(answer.order - 1)
-                  }
-                  ko={
-                      !isHideFeedback &&
-                    props.confirmed &&
-                    attempt &&
-                    attempt <= currentAttempt &&
-                    index !== parseInt(answer.order - 1)
-                  }
-                  correctOrder={answer.order}
-                  index={index}
-                  text={answer.text}
-                  handleReorder={handleReorder}
-                ></SortableItem>
-              ))}
-            </SortableContext>
-          </DndContext>
-        </div>
-      {feedbackText && (
-        <FeedbackText
-          isCorrect={areAnsweredCorrect()}
-          feedbackText={feedbackText}
-        ></FeedbackText>
-      )}
-      <div
-        style={{
-          flex: "1 0 auto",
-          display: "flex",
-          alignItems: "flex-end",
-          justifyContent: "center",
-        }}
-      >
-        {buttonConfirm()}
-        {buttonRetry()}
-      </div>
-
-      {prevNextButtons}
-    </div>
- */
-
-    ////////////
-
-    
-  
-/*
-    requestAnimationFrame(() => {
-      const listItems = Array.from(listRef.current.children);
-      const updatedPositions = listItems.map((el) => el.getBoundingClientRect().top);
-
-      // Step 5: Calculate and animate the difference in Y positions
-     listItems.forEach((el, index) => {
-      console.log({updatedPositions, initialPositions,index})
-       // console.log({listItems,updatedPositions})
-
-       //qui il problema
-       const x = initialId[index]
-        const dy = initialPositions[index]  - updatedPositions[index];
-       
-      console.log(dy,initialId )
-        
- 
-        gsap.to(el, {
-          y: dy,
-          duration: 1,
-          ease: "power2.out"
-        });
-      });
-      
-    });*/
-   /////////////////////////////////

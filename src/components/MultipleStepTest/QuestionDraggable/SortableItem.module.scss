@@ -4,7 +4,7 @@
     display: flex;
     margin: 10px 0;
     align-items: center;
-    cursor: grab;        
+    cursor: pointer;        
     .itemKey{
         background-color: $colorMain;
         color: #FFF;
@@ -17,8 +17,20 @@
         margin-right: -12px;
         z-index: 99;
     }
+    .itemKey_not_touched{
+        background-color: gainsboro;
+        color: #FFF;
+        border-radius: 100%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: -12px;
+        z-index: 99;
+    }
     .itemDesc{
-        background-color: $colorLightGrey;
+       // background-color: $colorLightGrey;
         box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
         color: $colorMain;
         flex: 1 0 auto;

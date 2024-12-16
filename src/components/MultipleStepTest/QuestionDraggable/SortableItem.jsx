@@ -2,7 +2,7 @@ import { useSortable } from "@dnd-kit/sortable";
 import {CSS} from '@dnd-kit/utilities';
 import styles from "./SortableItem.module.scss";
 
-const SortableItem = ({id, ok, ko, index, text, correctOrder})=>{
+const SortableItem = ({id, ok, ko, index, text, correctOrder,handleReorder,position,touched})=>{
     const {
         attributes,
         listeners,
@@ -19,10 +19,12 @@ const SortableItem = ({id, ok, ko, index, text, correctOrder})=>{
     return (
         <div ref={setNodeRef}
              style={style}
-             {...attributes}
-             {...listeners}
+             key={id}
+             data-key={position}
+             data-id={id}
+             onClick={(e) => handleReorder(id)}
              className={ `${styles.draggableItem} ${ok ? styles.ok : (ko ? styles.ko : '')}` }>
-            <div className={styles.itemKey}>{(ok || ko) ? correctOrder : (index + 1)}</div>
+            <div className={`${touched ? styles.itemKey: styles.itemKey_not_touched}`}>{(ok || ko) ? correctOrder : `${touched ? index + 1 : ''}`}</div>
             <div className={styles.itemDesc}>
                 <p dangerouslySetInnerHTML={{ __html: text }}></p>
             </div>
