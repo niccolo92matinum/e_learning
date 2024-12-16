@@ -24,9 +24,9 @@ const SortableItem = ({id, ok, ko, index, text, correctOrder,handleReorder,posit
              data-id={id}
              onClick={(e) => handleReorder(id)}
              className={ `${styles.draggableItem} ${ok ? styles.ok : (ko ? styles.ko : '')}` }>
-            <div className={`${touched ? styles.itemKey: styles.itemKey_not_touched}`}>{(ok || ko) ? correctOrder : `${touched ? index + 1 : ''}`}</div>
+            <div className={`${touched ? styles.itemKey: styles.itemKey_not_touched}`}>{(ok || ko) ? correctOrder : `${touched ? index + 1 : 0}`}</div>
             <div className={styles.itemDesc}>
-                <p dangerouslySetInnerHTML={{ __html: text }}></p>
+                <p style={{fontSize:'30px'}} dangerouslySetInnerHTML={{ __html: text }}></p>
             </div>
         </div>
     )

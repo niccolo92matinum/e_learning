@@ -191,16 +191,12 @@ const QuestionDraggable = (props) => {
 
 let reorderedItems = [];
 if(checkIfTestStart === false){
-  console.log(1)
+
   reorderedItems = [
     ...userAnswers.filter((item) => item.id === clickedId),
     ...userAnswers.filter((item) => item.id !== clickedId)
   ];
 }else if(isElementChecked === false && checkIfTestStart === true){
- 
-  const a = userAnswers.filter((item) => item.touched === true)
-  const b = userAnswers.filter((item) => item.id === clickedId)
-  const c = userAnswers.filter((item) => ((item.id !== clickedId) && (item.touched === false)))
 
   reorderedItems = [
     ...userAnswers.filter((item) => item.touched === true),
@@ -261,18 +257,27 @@ if(checkIfTestStart === false){
   
   };
 
-
+console.log('render')
   return (
     <div className={"Question"}>
-      { !isNil(countdownTimer) && (countdownTimer > 0) &&  <CountdownLine timer={timer} perc={percTimer}/>}
+     
+      <div className='container_sortable'>
+        <div className="container_child">
+        { !isNil(countdownTimer) && (countdownTimer > 0) &&  <CountdownLine timer={timer} perc={percTimer}/>}
       <HeaderQuestion
         currentQuestionIndex={currentQuestionIndex}
         title={title}
-        subtitle={subtitle}
+       // subtitle={subtitle}
         questionsLenght={questionsLenght}
       ></HeaderQuestion>
-        <div ref={listRef}  style={{touchAction: 'none', position:'relative'}}>
-              {userAnswers.map((answer, index) => (
+        </div>
+        <div  className="container_child right" style={{touchAction: 'none'}}>
+          <div className="container_subtitle_answare">
+          <div className='subtitle'>
+          {subtitle}
+          </div>
+          <div ref={listRef}   className='container_answere'>
+          {userAnswers.map((answer, index) => (
                 <SortableItem
                   key={"di_" + answer.id}
                   id={answer.id}
@@ -298,7 +303,14 @@ if(checkIfTestStart === false){
                   touched={answer.touched}
                 ></SortableItem>
               ))}
+          </div>
+          </div>
+          
+          
+             
         </div>
+      </div>
+        
       {feedbackText && (
         <FeedbackText
           isCorrect={areAnsweredCorrect()}

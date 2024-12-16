@@ -8,7 +8,7 @@
     .itemKey{
         background-color: $colorMain;
         color: #FFF;
-        border-radius: 100%;
+        border-radius: 10px;
         width: 40px;
         height: 40px;
         display: flex;
@@ -20,7 +20,7 @@
     .itemKey_not_touched{
         background-color: gainsboro;
         color: #FFF;
-        border-radius: 100%;
+        border-radius: 10px;
         width: 40px;
         height: 40px;
         display: flex;
@@ -31,7 +31,7 @@
     }
     .itemDesc{
        // background-color: $colorLightGrey;
-        box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+       // box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
         color: $colorMain;
         flex: 1 0 auto;
         padding: 10px;
