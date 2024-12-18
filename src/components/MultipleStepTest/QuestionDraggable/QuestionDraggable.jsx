@@ -2,7 +2,6 @@ import React, { useEffect, useState, useRef } from "react";
 import FeedbackText from "../FeedbackText/FeedbackText";
 import HeaderQuestion from "../HeaderQuestion/HeaderQuestion";
 import { useSelector } from "react-redux";
-import { DndContext, closestCenter } from "@dnd-kit/core";
 import SortableItem from "./SortableItem";
 import { isNil } from "ramda";
 import {useRecoverExercises} from "../../../utils/useRecoverExercisesState.js";
@@ -31,7 +30,8 @@ import gsap from 'gsap';
        {
            "text": "<p>Energetica</p>",
            "order": "3",
-           "id": 1
+           "id": 1,
+           touched:false
        },
        {
            "text": "<p>Sinergica</p>",
@@ -85,10 +85,9 @@ const QuestionDraggable = (props) => {
   const [feedbackText, setFeedbackText] = useState(null);
   const [userAnswers, setUserAnswers] = useState([]);
   const [currentAttempt, setCurrentAttempt] = useState(recoveredAttempt || 1);
-
+  console.log({userAnswers,feedbackText})
   const structureData = useSelector((state) => state.structure.data);
-
-
+  useRecoverExercises(Array.isArray(givenAnswers) ? givenAnswers : givenAnswers, setUserAnswers);
 
     useEffect(() => {
         if (answers.find((a) => isNil(a.id))) {
@@ -104,11 +103,12 @@ const QuestionDraggable = (props) => {
 
   const areAnsweredCorrect = () => {
     // ordino correttamente per order le risposte di struttura
-    const reorderedAnswer = [...answers];
+    const reorderedAnswer = [...userAnswers];
     reorderedAnswer.sort((a, b) => (a.order > b.order ? 1 : -1));
     // elimino elemento che serve alla libreria di drag
-    const filteredAnswers = userAnswers.filter((v) => !v.chosen);
-    return JSON.stringify(reorderedAnswer) === JSON.stringify(filteredAnswers);
+    //const filteredAnswers = userAnswers.filter((v) => !v.chosen);
+    //console.log({filteredAnswers})
+    return JSON.stringify(reorderedAnswer) === JSON.stringify(userAnswers);
   };
 
   const onConfirm = (event) => {
@@ -120,8 +120,10 @@ const QuestionDraggable = (props) => {
     // se ho dei tentativi e non li ho bruciati non mostro feedback
     // se ho risposto giusto oppure ho finito i tentativi, posso sbloccare la pagina
     const canConvalidate =
-      !attempt || attempt <= currentAttempt || youAnswers;
+      (!attempt || attempt) <= (currentAttempt || youAnswers);
     // setto il tentativo
+    //console.log({youAnswers, attempt,currentAttempt})
+  
     onConfirmed(userAnswers, youAnswers, canConvalidate);
       if (feedback && !isHideFeedback) {
         setFeedbackText(youAnswers ? feedback.ok : (!attempt || attempt <= currentAttempt) ? feedback.ko : (feedback.retry ?? ''));
@@ -130,7 +132,7 @@ const QuestionDraggable = (props) => {
 
   const isUserTouchedAllAnswere = userAnswers.some(obj => obj.touched === false);
 
-console.log({userAnswers,isUserTouchedAllAnswere,prp:props.confirmed,structureData})
+
   const buttonConfirm = () => {
       return !props.confirmed ? (
         <input
