@@ -186,7 +186,6 @@
 
 ///// code Nicola 
 .container_sortable{
-  display: flex;
   width: 100%;
 
   .container_child{
@@ -194,11 +193,10 @@
      position:'relative';
      
   }
-  .right{
+  .bottom{
     background-color: $colorLightGrey;
-    margin-top:-50px;
     border-radius: 30px;
-    padding-bottom: 50px;
+    padding: 50px 0 50px 0;
   }
   .subtitle{
     justify-content: center;
@@ -212,6 +210,6 @@
 }
 
 .container_answere{
-  margin: 20px 0 0 100px;
+  margin: 0 0 0 50px;
   
 }

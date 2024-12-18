@@ -3,11 +3,6 @@ import FeedbackText from "../FeedbackText/FeedbackText";
 import HeaderQuestion from "../HeaderQuestion/HeaderQuestion";
 import { useSelector } from "react-redux";
 import { DndContext, closestCenter } from "@dnd-kit/core";
-import {
-  arrayMove,
-  SortableContext,
-  verticalListSortingStrategy,
-} from "@dnd-kit/sortable";
 import SortableItem from "./SortableItem";
 import { isNil } from "ramda";
 import {useRecoverExercises} from "../../../utils/useRecoverExercisesState.js";
@@ -83,7 +78,8 @@ const QuestionDraggable = (props) => {
     percTimer,
     countdownTimer,
     timer,
-    questionsLenght
+    questionsLenght,
+    confirmed
   } = props;
 
   const [feedbackText, setFeedbackText] = useState(null);
@@ -92,7 +88,7 @@ const QuestionDraggable = (props) => {
 
   const structureData = useSelector((state) => state.structure.data);
 
-    useRecoverExercises(givenAnswers, setUserAnswers);
+
 
     useEffect(() => {
         if (answers.find((a) => isNil(a.id))) {
@@ -132,17 +128,21 @@ const QuestionDraggable = (props) => {
       }
   };
 
+  const isUserTouchedAllAnswere = userAnswers.some(obj => obj.touched === false);
+
+console.log({userAnswers,isUserTouchedAllAnswere,prp:props.confirmed,structureData})
   const buttonConfirm = () => {
-    return !props.confirmed ? (
-      <input
-        className={`btnConfirm`}
-        type="submit"
-        value={structureData.confirm}
-        onClick={onConfirm}
-      />
-    ) : (
-      <div></div>
-    );
+      return !props.confirmed ? (
+        <input
+          className={`btnConfirm`}
+          type="submit"
+          value={structureData.confirm}
+          onClick={(e)=>onConfirm(e)}
+          disabled={isUserTouchedAllAnswere}
+        />
+      ) : (
+        <div></div>
+      );
   };
 
   const buttonRetry = () => {
@@ -168,18 +168,18 @@ const QuestionDraggable = (props) => {
   /*const handleDragEnd = e => { return e.related.className.indexOf('static') === -1};*/
   const handleDragEnd = (event) => {
     const { active, over } = event;
+    console.log({active,over})
+    /*
     if (active.id !== over.id) {
       setUserAnswers((list) => {
         let activeIndex = list.findIndex((el) => el.id === active.id);
         let overIndex = list.findIndex((el) => el.id === over.id);
         return arrayMove(list, activeIndex, overIndex);
       });
-    }
+    }*/
   };
 
   const listRef = useRef();
-
-
 
   const handleReorder = (clickedId) => {
     
@@ -265,7 +265,7 @@ if(checkIfTestStart === false){
     })
   },[userAnswers])
 
-console.log('render')
+
   return (
     <div className={"Question"}>
      
@@ -275,15 +275,11 @@ console.log('render')
       <HeaderQuestion
         currentQuestionIndex={currentQuestionIndex}
         title={title}
-       // subtitle={subtitle}
+        subtitle={subtitle}
         questionsLenght={questionsLenght}
       ></HeaderQuestion>
         </div>
-        <div  className="container_child right" style={{touchAction: 'none'}}>
-          <div className="container_subtitle_answare">
-          <div className='subtitle'>
-          {subtitle}
-          </div>
+        <div  className="container_child bottom"  style={{touchAction: 'none'}}>
           <div ref={listRef}   className='container_answere'>
           {userAnswers.map((answer, index) => (
                 <SortableItem
@@ -313,10 +309,6 @@ console.log('render')
               ))}
           </div>
           </div>
-          
-          
-             
-        </div>
       </div>
         
       {feedbackText && (
