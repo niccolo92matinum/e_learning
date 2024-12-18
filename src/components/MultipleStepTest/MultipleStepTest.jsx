@@ -232,7 +232,7 @@ const MultipleStepTest = (props) => {
   },[props, bookmarkData]);
 
   const [exercisesState, dispatchExercises] = useReducer(exercisesReducer, initialExerciseState, createInitialState);
-
+console.log(exercisesState)
     useEffect(() => {
         if (countdown.timeOver){
             onClickFinalProfileHandler();
@@ -251,12 +251,14 @@ const MultipleStepTest = (props) => {
     props.muted
   );
 
-  const onQuestionConfirmed = (_answeredIndexes, _correct, _canConvalidate) => {
+  const onQuestionConfirmed = (_answeredIndexes, _correct, _canConvalidate, _addAttempt ) => {
     let updatedState = [...exercisesState.arrayStates];
     updatedState[exercisesState.currentQuestionIndex].confirmed = true;
     updatedState[exercisesState.currentQuestionIndex].viewed = !!_canConvalidate;
     updatedState[exercisesState.currentQuestionIndex].correct = _correct;
     updatedState[exercisesState.currentQuestionIndex].givenAnswers = _answeredIndexes;
+    updatedState[exercisesState.currentQuestionIndex].attempt = _addAttempt;
+    //totalAttempt, madeAttempts
     dispatchExercises({
       type: "QUESTION_CONFIRMED",
       payload: {
@@ -461,6 +463,7 @@ const MultipleStepTest = (props) => {
                              timer={countdown.timer}
                              countdownTimer={props.test.timer}
                              questionsLenght={exercisesState?.arrayStates.length}
+                             recoveredAttempt={exercisesState?.arrayStates[exercisesState?.currentQuestionIndex]?.attempt}
                             />
   const renderEsercitazioneTest = () => {
     return (

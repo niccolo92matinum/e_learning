@@ -79,14 +79,15 @@ const QuestionDraggable = (props) => {
     countdownTimer,
     timer,
     questionsLenght,
-    confirmed
+    confirmed,
   } = props;
-
-  const [feedbackText, setFeedbackText] = useState(null);
+console.log({attempt,recoveredAttempt})
+  const [feedbackText, setFeedbackText] = useState('ciao ciao');
   const [userAnswers, setUserAnswers] = useState([]);
-  const [currentAttempt, setCurrentAttempt] = useState(recoveredAttempt || 1);
-  console.log({userAnswers,feedbackText})
+  const [currentAttempt, setCurrentAttempt] = useState(recoveredAttempt | 1);
+ 
   const structureData = useSelector((state) => state.structure.data);
+ 
   useRecoverExercises(Array.isArray(givenAnswers) ? givenAnswers : givenAnswers, setUserAnswers);
 
     useEffect(() => {
@@ -124,7 +125,7 @@ const QuestionDraggable = (props) => {
     // setto il tentativo
     //console.log({youAnswers, attempt,currentAttempt})
   
-    onConfirmed(userAnswers, youAnswers, canConvalidate);
+    onConfirmed(userAnswers, youAnswers, canConvalidate, currentAttempt);
       if (feedback && !isHideFeedback) {
         setFeedbackText(youAnswers ? feedback.ok : (!attempt || attempt <= currentAttempt) ? feedback.ko : (feedback.retry ?? ''));
       }
@@ -167,19 +168,6 @@ const QuestionDraggable = (props) => {
     );
   };
 
-  /*const handleDragEnd = e => { return e.related.className.indexOf('static') === -1};*/
-  const handleDragEnd = (event) => {
-    const { active, over } = event;
-    console.log({active,over})
-    /*
-    if (active.id !== over.id) {
-      setUserAnswers((list) => {
-        let activeIndex = list.findIndex((el) => el.id === active.id);
-        let overIndex = list.findIndex((el) => el.id === over.id);
-        return arrayMove(list, activeIndex, overIndex);
-      });
-    }*/
-  };
 
   const listRef = useRef();
 
