@@ -81,11 +81,11 @@ const QuestionDraggable = (props) => {
     questionsLenght,
     confirmed,
   } = props;
-console.log({attempt,recoveredAttempt})
-  const [feedbackText, setFeedbackText] = useState('ciao ciao');
+
+  const [feedbackText, setFeedbackText] = useState('');
   const [userAnswers, setUserAnswers] = useState([]);
-  const [currentAttempt, setCurrentAttempt] = useState(recoveredAttempt | 1);
- 
+  const [currentAttempt, setCurrentAttempt] = useState(recoveredAttempt || 0);
+  console.log({attempt,recoveredAttempt,currentAttempt,feedback})
   const structureData = useSelector((state) => state.structure.data);
  
   useRecoverExercises(Array.isArray(givenAnswers) ? givenAnswers : givenAnswers, setUserAnswers);
@@ -124,8 +124,8 @@ console.log({attempt,recoveredAttempt})
       (!attempt || attempt) <= (currentAttempt || youAnswers);
     // setto il tentativo
     //console.log({youAnswers, attempt,currentAttempt})
-  
-    onConfirmed(userAnswers, youAnswers, canConvalidate, currentAttempt);
+    setCurrentAttempt((currentAttempt) => currentAttempt + 1);
+    onConfirmed(userAnswers, youAnswers, canConvalidate, currentAttempt + 1 );
       if (feedback && !isHideFeedback) {
         setFeedbackText(youAnswers ? feedback.ok : (!attempt || attempt <= currentAttempt) ? feedback.ko : (feedback.retry ?? ''));
       }
@@ -140,7 +140,9 @@ console.log({attempt,recoveredAttempt})
           className={`btnConfirm`}
           type="submit"
           value={structureData.confirm}
-          onClick={(e)=>onConfirm(e)}
+          onClick={(e)=>{
+            onConfirm(e)
+          }}
           disabled={isUserTouchedAllAnswere}
         />
       ) : (
@@ -159,7 +161,7 @@ console.log({attempt,recoveredAttempt})
         value={structureData.retry}
         onClick={() => {
             setFeedbackText('');
-            setCurrentAttempt((currentAttempt) => currentAttempt + 1);
+            //setCurrentAttempt((currentAttempt) => currentAttempt + 1);
             props.onRetry()
         }}
       />
@@ -172,7 +174,9 @@ console.log({attempt,recoveredAttempt})
   const listRef = useRef();
 
   const handleReorder = (clickedId) => {
-    
+    if(currentAttempt < attempt){
+   
+   
     // Capture the initial positions of items
     const listItems = Array.from(listRef.current.children);
 //controllo se l'elemnto è stato selezionato altrimenti faccio il rollback
@@ -243,7 +247,7 @@ if(checkIfTestStart === false){
        }
       })
   });
-  
+}
   };
 
 
@@ -295,6 +299,7 @@ if(checkIfTestStart === false){
                   handleReorder={handleReorder}
                   position={answer.position}
                   touched={answer.touched}
+                  attemptKo={attempt === currentAttempt}
                 ></SortableItem>
               ))}
           </div>
