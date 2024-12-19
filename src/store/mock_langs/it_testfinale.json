@@ -92,7 +92,7 @@
         },
         "limit": -1,
         "random": false,
-        "timer": 0,
+        "timer": 0.2,
         "confirmOnAnswer": true,
         "isHideFeedback": false,
         "elements": [
@@ -106,7 +106,7 @@
             "title": "<p>Testo formattato</p>",
             "subtitle": "Clicca sulle opzioni per ordinarle",
             "score": 1,
-            "attempt": 3,
+            "attempt": 1,
             "answers": [
               {
                 "text": "<p>Energetica</p>",

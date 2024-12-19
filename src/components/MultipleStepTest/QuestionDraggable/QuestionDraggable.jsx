@@ -86,7 +86,7 @@ const QuestionDraggable = (props) => {
   const [feedbackText, setFeedbackText] = useState('');
   const [userAnswers, setUserAnswers] = useState([]);
   const [currentAttempt, setCurrentAttempt] = useState(recoveredAttempt || 0);
-  console.log({answers,userAnswers})
+
   const structureData = useSelector((state) => state.structure.data);
  
   useRecoverExercises(Array.isArray(givenAnswers) ? givenAnswers : givenAnswers, setUserAnswers);
@@ -252,34 +252,47 @@ if(checkIfTestStart === false){
 
 
   useEffect(()=>{
-    console.log('dentro clear gsap')
+ 
     const listItems = Array.from(listRef.current.children);
 
-  
-  
     listItems.forEach((item, index) => {
       gsap.set(item, { clearProps: "all" });
     })
+  
   },[userAnswers])
-
+  console.log({userAnswers})
 
   const showSolution = () => {
-    console.log('order')
+    console.log('show solution',userAnswers)
     const listItems = Array.from(listRef.current.children);
     const initialData = listItems.map((item) => ( {id:item.getAttribute("data-id"),position:item.getAttribute("data-key"),top:item.getBoundingClientRect().top}))
 
-    const answerOrderSolution = userAnswers.sort((a, b) => a.order - b.order).map((el, index )=>{
-      el.position = index
+    const answerOrderSolution = [...userAnswers].sort((a, b) => {return Number(a.order) - Number(b.order)}).map((el, index )=>{
+     
+      el = {...el,...{position:index}}
       return el
     } );
-console.log({answerOrderSolution})
+
+    //se l'elemento è nella posizione corretta ok
+      // altrimenti cambio il valued touched da true a false per apportare modifiche nel css
+      const answerOrderToUpdate = answerOrderSolution.map((el, index) =>{
+
+        if(el.id !== Number(initialData[index].id)){
+          el = {...el,...{touched:false}}
+        }
+        return el
+      })
+
+
     listItems.forEach((item, index) => {
       //l'attuale posizione che ha selezionato l'utente
-      const prova = answerOrderSolution.find(el => el.id === Number(item.getAttribute("data-id"))).position
-
+      const prova = answerOrderToUpdate.find(el => el.id === Number(item.getAttribute("data-id"))).position
+      const x = answerOrderToUpdate.find(el => el.id === Number(item.getAttribute("data-id")))
       const newAlign = initialData.find(el => Number(el.position) === prova).top
       const oldIlign = initialData[index].top
-      console.log({prova,newAlign,oldIlign,initialData})
+     
+      
+      
       
        let tot = Math.trunc(oldIlign) - Math.trunc(newAlign)
  
@@ -292,10 +305,10 @@ console.log({answerOrderSolution})
        item,
        {
          y: newTot,
-         duration: 0.5,
+         duration: 1.5,
          ease: "power1.out",
         onComplete: () => {
-         setUserAnswers(answerOrderSolution) 
+         setUserAnswers(answerOrderToUpdate) 
         }
       })
  
@@ -303,14 +316,17 @@ console.log({answerOrderSolution})
 
 
   }
-/*
+
+  // si potrebbe evocare la funzione in un semplice if statement ma per ora lo facciamo dentro uno useeffect
   useEffect(()=>{
-    if(solutionVisible === true){
+    console.log('dentro use effect')
+    if(solutionVisible === true  && userAnswers.length > 0){
+      
       showSolution()
     }
-   console.log('dentro new effect')
-  },[solutionVisible])
-*/
+ 
+  },[solutionVisible, userAnswers])
+
 
   return (
     <div className={"Question"}>
@@ -352,13 +368,13 @@ console.log({answerOrderSolution})
                   position={answer.position}
                   touched={answer.touched}
                   attemptKo={attempt === currentAttempt}
+                  solutionVisible={solutionVisible}
                 ></SortableItem>
               ))}
+             
           </div>
-          <button onClick={()=> showSolution() }>show solution</button>
           </div>
       </div>
-        
       {feedbackText && (
         <FeedbackText
           isCorrect={areAnsweredCorrect()}
