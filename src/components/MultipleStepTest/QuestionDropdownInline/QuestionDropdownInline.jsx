@@ -101,7 +101,7 @@ const QuestionDropdownInline = (props) => {
     solutionVisible,
     questionsLenght
   } = props;
-
+console.log(solutionVisible,'solution')
   const [answeredIndex, setAnsweredIndex] = useState({});
   const [feedbackText, setFeedbackText] = useState(null);
   const [currentAttempt, setCurrentAttempt] = useState(recoveredAttempt || 1);

@@ -232,7 +232,7 @@ const MultipleStepTest = (props) => {
   },[props, bookmarkData]);
 
   const [exercisesState, dispatchExercises] = useReducer(exercisesReducer, initialExerciseState, createInitialState);
-console.log(exercisesState)
+console.log({exercisesState})
     useEffect(() => {
         if (countdown.timeOver){
             onClickFinalProfileHandler();

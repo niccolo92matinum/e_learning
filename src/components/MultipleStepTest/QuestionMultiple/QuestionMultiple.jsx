@@ -60,7 +60,7 @@ const QuestionMultiple = (props) => {
     solutionVisible,
     questionsLenght
   } = props;
-
+console.log('dentro crocette')
   const [answeredIndexes, setAnsweredIndexes] = useState([]);
   const [feedbackText, setFeedbackText] = useState(null);
   const [currentAttempt, setCurrentAttempt] = useState(recoveredAttempt || 1);

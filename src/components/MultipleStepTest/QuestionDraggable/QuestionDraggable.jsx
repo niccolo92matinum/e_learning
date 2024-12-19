@@ -80,12 +80,13 @@ const QuestionDraggable = (props) => {
     timer,
     questionsLenght,
     confirmed,
+    solutionVisible,
   } = props;
 
   const [feedbackText, setFeedbackText] = useState('');
   const [userAnswers, setUserAnswers] = useState([]);
   const [currentAttempt, setCurrentAttempt] = useState(recoveredAttempt || 0);
-  console.log({attempt,recoveredAttempt,currentAttempt,feedback})
+  console.log({answers,userAnswers})
   const structureData = useSelector((state) => state.structure.data);
  
   useRecoverExercises(Array.isArray(givenAnswers) ? givenAnswers : givenAnswers, setUserAnswers);
@@ -152,7 +153,7 @@ const QuestionDraggable = (props) => {
 
   const buttonRetry = () => {
     return props.confirmed &&
-      attempt &&
+      attempt && !solutionVisible  &&
       attempt > currentAttempt &&
       !areAnsweredCorrect() ? (
       <input
@@ -162,6 +163,9 @@ const QuestionDraggable = (props) => {
         onClick={() => {
             setFeedbackText('');
             //setCurrentAttempt((currentAttempt) => currentAttempt + 1);
+            setUserAnswers((prev)=> {
+             return prev.map(el => ({...el,...{touched:false}}))
+            }) 
             props.onRetry()
         }}
       />
@@ -176,10 +180,9 @@ const QuestionDraggable = (props) => {
   const handleReorder = (clickedId) => {
     if(currentAttempt < attempt){
    
-   
     // Capture the initial positions of items
     const listItems = Array.from(listRef.current.children);
-//controllo se l'elemnto è stato selezionato altrimenti faccio il rollback
+//controllo se l'elemento è stato selezionato 
     const isElementChecked = userAnswers.find(el => el.id === clickedId).touched 
    const checkIfTestStart = userAnswers.some((obj) => obj.touched === true);
 
@@ -221,10 +224,7 @@ if(checkIfTestStart === false){
     const initialData = listItems.map((item) => ( {id:item.getAttribute("data-id"),position:item.getAttribute("data-key"),top:item.getBoundingClientRect().top}))
    
     listItems.forEach((item, index) => {
-      // After state update, calculate new positions
-      //const newElposition = reorderedItemsWithNewPosition.find(el => el.id === clickedId).position
-
-      //const newpposition = initialData.find(el => Number(el.position) === newElposition).top
+ 
      const prova = reorderedItemsWithNewPosition.find(el => el.id === Number(item.getAttribute("data-id"))).position
      const newAlign = initialData.find(el => Number(el.position) === prova).top
      const oldIlign = initialData[index].top
@@ -252,13 +252,65 @@ if(checkIfTestStart === false){
 
 
   useEffect(()=>{
+    console.log('dentro clear gsap')
     const listItems = Array.from(listRef.current.children);
+
+  
   
     listItems.forEach((item, index) => {
       gsap.set(item, { clearProps: "all" });
     })
   },[userAnswers])
 
+
+  const showSolution = () => {
+    console.log('order')
+    const listItems = Array.from(listRef.current.children);
+    const initialData = listItems.map((item) => ( {id:item.getAttribute("data-id"),position:item.getAttribute("data-key"),top:item.getBoundingClientRect().top}))
+
+    const answerOrderSolution = userAnswers.sort((a, b) => a.order - b.order).map((el, index )=>{
+      el.position = index
+      return el
+    } );
+console.log({answerOrderSolution})
+    listItems.forEach((item, index) => {
+      //l'attuale posizione che ha selezionato l'utente
+      const prova = answerOrderSolution.find(el => el.id === Number(item.getAttribute("data-id"))).position
+
+      const newAlign = initialData.find(el => Number(el.position) === prova).top
+      const oldIlign = initialData[index].top
+      console.log({prova,newAlign,oldIlign,initialData})
+      
+       let tot = Math.trunc(oldIlign) - Math.trunc(newAlign)
+ 
+         let newTot = tot
+       if(tot !== 0){
+          newTot = - tot
+       }
+       
+    gsap.to(
+       item,
+       {
+         y: newTot,
+         duration: 0.5,
+         ease: "power1.out",
+        onComplete: () => {
+         setUserAnswers(answerOrderSolution) 
+        }
+      })
+ 
+   });
+
+
+  }
+/*
+  useEffect(()=>{
+    if(solutionVisible === true){
+      showSolution()
+    }
+   console.log('dentro new effect')
+  },[solutionVisible])
+*/
 
   return (
     <div className={"Question"}>
@@ -303,6 +355,7 @@ if(checkIfTestStart === false){
                 ></SortableItem>
               ))}
           </div>
+          <button onClick={()=> showSolution() }>show solution</button>
           </div>
       </div>
         
