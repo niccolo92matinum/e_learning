@@ -29,10 +29,10 @@ const SortableItem = (props)=>{
    }else if(attemptKo && !solutionVisible){
     styleSingleEl = styles.itemKey_not_touched
     styleSingleElTagP = styles.pSingleElement
-   }else if(touched && solutionVisible){
-    styleSingleEl = styles.itemKey
    }else if(!touched && solutionVisible){
-    styleSingleEl = styles.itemKey_not_touched
+    styleSingleEl = styles.itemKey_not_touched_solution_visible
+   }else if(touched && solutionVisible){
+    styleSingleEl = styles.itemKey_solution_visible
    }
 
  
@@ -45,7 +45,7 @@ const SortableItem = (props)=>{
              onClick={(e) => handleReorder(id)}
              className={ `${styles.draggableItem}` }>
             <div className={styleSingleEl}>
-                <p className={styleSingleElTagP}>{touched ? index + 1 : 0}</p>
+                <p className={styleSingleElTagP}>{(touched || solutionVisible) ? index + 1 : 0}</p>
                 </div>
             <div className={styles.itemDesc}>
                 <p dangerouslySetInnerHTML={{ __html: text }}></p>

@@ -18,6 +18,19 @@
         z-index: 99;
        
     }
+    .itemKey_solution_visible{
+        background-color: $greenColor;
+        color: #FFF;
+        border-radius: 10px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: -12px;
+        z-index: 99;
+       
+    }
     .itemKey_not_touched{
         background-color: gainsboro;
         color: #FFF;
@@ -30,6 +43,19 @@
         margin-right: -12px;
         z-index: 99;
     }
+    .itemKey_not_touched_solution_visible{
+        background-color: $redColor;
+        color: #FFF;
+        border-radius: 10px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: -12px;
+        z-index: 99;
+    }
+    
 
     .pSingleElement{
         color:$colorMain;

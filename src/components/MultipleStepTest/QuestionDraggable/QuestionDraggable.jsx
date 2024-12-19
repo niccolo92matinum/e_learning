@@ -136,7 +136,7 @@ const QuestionDraggable = (props) => {
 
 
   const buttonConfirm = () => {
-      return !props.confirmed ? (
+      return (!props.confirmed && !solutionVisible) ? (
         <input
           className={`btnConfirm`}
           type="submit"
@@ -287,13 +287,10 @@ if(checkIfTestStart === false){
     listItems.forEach((item, index) => {
       //l'attuale posizione che ha selezionato l'utente
       const prova = answerOrderToUpdate.find(el => el.id === Number(item.getAttribute("data-id"))).position
-      const x = answerOrderToUpdate.find(el => el.id === Number(item.getAttribute("data-id")))
       const newAlign = initialData.find(el => Number(el.position) === prova).top
       const oldIlign = initialData[index].top
      
-      
-      
-      
+    
        let tot = Math.trunc(oldIlign) - Math.trunc(newAlign)
  
          let newTot = tot
